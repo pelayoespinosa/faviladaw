@@ -1,0 +1,10 @@
+node_modules
+client/node_modules
+client/android
+client/ios
+client/resources
+uploads
+public
+deploy
+.env
+.git

@@ -1,0 +1,32 @@
+node_modules
+client/node_modules
+
+# env
+.env
+.env.local
+
+# build output
+public
+
+# uploads (symlinked, contains employee documents/signatures)
+uploads
+
+# Android release signing key + credentials — never committed
+client/android-signing
+
+# logs
+*.log
+npm-debug.log*
+
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# macOS zip artifacts
+__MACOSX
+
+# nested OS files
+**/.DS_Store
