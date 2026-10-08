@@ -1,0 +1,1767 @@
+[
+  {
+    "_id": {
+      "$oid": "f50000000000000000000375"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000010"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-01-12T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-30T00:00:00.000Z"
+    },
+    "observaciones": "Baja médica de larga duración",
+    "createdAt": {
+      "$date": "2025-12-13T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-13T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005bb"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000028"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-01-19T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-01-23T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2025-12-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000ac4"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000032"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-01-19T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-01-23T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2025-12-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000002c5"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000015"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-02-09T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-03-06T00:00:00.000Z"
+    },
+    "observaciones": "Baja por enfermedad común",
+    "createdAt": {
+      "$date": "2026-01-10T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-10T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000006f6"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001b"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-02-11T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-02-13T00:00:00.000Z"
+    },
+    "observaciones": "Puente",
+    "createdAt": {
+      "$date": "2026-01-12T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-12T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000a9b"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000005"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-03-23T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-03-27T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-02-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-21T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000ac5"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000004"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-03-23T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-03-27T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-02-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-21T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000532"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-10T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000069f"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001e"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-10T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000862"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000009"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-10T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-07T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000002f8"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001e"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-04-13T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-05-15T00:00:00.000Z"
+    },
+    "observaciones": "Baja por accidente no laboral",
+    "createdAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007da"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000030"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-13T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-17T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000803"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000021"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-13T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-17T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000526"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000023"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-24T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-21T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000059e"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000006"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-04-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-04-24T00:00:00.000Z"
+    },
+    "observaciones": "Semana Santa",
+    "createdAt": {
+      "$date": "2026-03-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-21T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000073c"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000016"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-05-15T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-04-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-11T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000008e5"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000d"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-05-18T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-05-22T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-04-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000050c"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000018"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-08T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-06-12T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-05-09T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-09T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000315"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000009"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Baja por enfermedad común",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000004d9"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000008"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005ef"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000026"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000067a"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000013"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000006f1"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001b"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000008b8"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002c"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000008df"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000d"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000abb"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000032"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-06-22T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-03T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-23T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000004fe"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000018"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-17T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000581"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000017"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-17T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000605"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002d"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-24T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000068b"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001f"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-17T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000709"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-17T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000792"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000012"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-24T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007a5"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000020"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-06T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-17T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000051f"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000023"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-07T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000594"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000006"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-31T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000626"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000c"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-31T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000072e"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000016"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-31T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007a6"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000002"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-31T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000082b"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000b"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-07-20T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-07-31T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-20T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000052c"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-07T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005b1"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000028"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-14T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000062d"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-07T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000006c7"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000011"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-21T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000749"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000010"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-14T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007bb"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000e"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-14T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000853"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000009"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-03T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-14T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000935"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000022"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-10T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-28T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-11T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000543"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000019"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-17T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-28T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005c5"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002e"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-17T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-21T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000649"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000007"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-17T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-28T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000763"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002f"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-17T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-28T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007d0"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000030"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-17T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-08-21T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-18T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000006de"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000024"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-24T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-07-25T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-07-25T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000004c6"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000026"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "observaciones": "Baja por accidente laboral",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000055d"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001c"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-11T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005dc"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000027"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-11T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000667"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000025"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-11T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000782"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000014"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-11T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007f5"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000021"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-11T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-01T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000008d4"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002b"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-09-07T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-09-18T00:00:00.000Z"
+    },
+    "observaciones": "Vacaciones de verano",
+    "createdAt": {
+      "$date": "2026-08-08T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-08T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000041f"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000017"
+    },
+    "tipo": "baja",
+    "fecha_inicio": {
+      "$date": "2026-09-21T00:00:00.000Z"
+    },
+    "observaciones": "Baja por enfermedad común",
+    "createdAt": {
+      "$date": "2026-08-22T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000056a"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000015"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-10-12T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-10-16T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-09-12T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-12T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000076d"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002f"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-10-12T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-10-16T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-09-12T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-12T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000054c"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000019"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-10-19T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-10-23T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000694"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000001f"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-10-19T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-10-23T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000713"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-10-19T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-10-23T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-19T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000080c"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000f"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-11-02T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-11-06T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-10-03T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-03T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000634"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000a"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-11-16T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-11-20T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-10-17T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-17T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000005cf"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002e"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-11-23T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-11-27T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-10-24T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-24T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f5000000000000000000060d"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000002d"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-11-23T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-11-27T00:00:00.000Z"
+    },
+    "observaciones": "",
+    "createdAt": {
+      "$date": "2026-10-24T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-24T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000004e3"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000008"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-07T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-11T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-07T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000816"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000029"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-07T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-11T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-07T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000654"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000007"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-14T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-18T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000836"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000b"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-14T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-18T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000a9a"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000031"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-14T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-18T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-14T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f50000000000000000000750"
+    },
+    "empleado": {
+      "$oid": "e10000000000000000000010"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-21T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-25T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-21T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f500000000000000000007c6"
+    },
+    "empleado": {
+      "$oid": "e1000000000000000000000e"
+    },
+    "tipo": "vacaciones",
+    "fecha_inicio": {
+      "$date": "2026-12-21T00:00:00.000Z"
+    },
+    "fecha_fin": {
+      "$date": "2026-12-25T00:00:00.000Z"
+    },
+    "observaciones": "Navidad",
+    "createdAt": {
+      "$date": "2026-11-21T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-21T00:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

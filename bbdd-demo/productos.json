@@ -1,0 +1,602 @@
+[
+  {
+    "_id": {
+      "$oid": "f80000000000000000001683"
+    },
+    "nombre": "Fregona de microfibra 40 cm",
+    "precio": 6.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001684"
+    },
+    "nombre": "Cubo escurridor 15 L",
+    "precio": 18.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001685"
+    },
+    "nombre": "Mopa plana de microfibra 40 cm",
+    "precio": 9.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001686"
+    },
+    "nombre": "Mango telescópico aluminio",
+    "precio": 12.4,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001687"
+    },
+    "nombre": "Palo de escoba de madera",
+    "precio": 2.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001688"
+    },
+    "nombre": "Cabezal de escoba de interior",
+    "precio": 4.2,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001689"
+    },
+    "nombre": "Cepillo de barrer exterior",
+    "precio": 6.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168a"
+    },
+    "nombre": "Recogedor con cepillo",
+    "precio": 5.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168b"
+    },
+    "nombre": "Bayeta de microfibra amarilla (pack 5)",
+    "precio": 4.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168c"
+    },
+    "nombre": "Bayeta de microfibra azul (pack 5)",
+    "precio": 4.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168d"
+    },
+    "nombre": "Bayeta de microfibra roja (pack 5)",
+    "precio": 4.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168e"
+    },
+    "nombre": "Bayeta de microfibra verde (pack 5)",
+    "precio": 4.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000168f"
+    },
+    "nombre": "Estropajo fibra verde (pack 10)",
+    "precio": 3.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001690"
+    },
+    "nombre": "Esponja doble cara (pack 10)",
+    "precio": 4.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001691"
+    },
+    "nombre": "Rasqueta de cristales 35 cm",
+    "precio": 7.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001692"
+    },
+    "nombre": "Gamuza de cristales",
+    "precio": 3.2,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001693"
+    },
+    "nombre": "Limpiacristales 5 L",
+    "precio": 8.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001694"
+    },
+    "nombre": "Desengrasante multiusos 5 L",
+    "precio": 7.4,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001695"
+    },
+    "nombre": "Fregasuelos pino 5 L",
+    "precio": 6.2,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001696"
+    },
+    "nombre": "Fregasuelos floral 5 L",
+    "precio": 6.2,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001697"
+    },
+    "nombre": "Lejía 5 L",
+    "precio": 3.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001698"
+    },
+    "nombre": "Amoniaco 5 L",
+    "precio": 4.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f80000000000000000001699"
+    },
+    "nombre": "Salfumán 5 L",
+    "precio": 4.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169a"
+    },
+    "nombre": "Desincrustante WC 1 L",
+    "precio": 3.4,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169b"
+    },
+    "nombre": "Abrillantador de suelos 5 L",
+    "precio": 14.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169c"
+    },
+    "nombre": "Decapante de suelos 5 L",
+    "precio": 17.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169d"
+    },
+    "nombre": "Cera para suelos 5 L",
+    "precio": 15.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169e"
+    },
+    "nombre": "Limpiador de acero inoxidable 750 ml",
+    "precio": 5.9,
+    "activo": false,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f8000000000000000000169f"
+    },
+    "nombre": "Ambientador aerosol 750 ml",
+    "precio": 3.7,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a0"
+    },
+    "nombre": "Jabón de manos 5 L",
+    "precio": 9.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a1"
+    },
+    "nombre": "Papel higiénico industrial (pack 12)",
+    "precio": 14.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a2"
+    },
+    "nombre": "Papel secamanos en rollo (pack 6)",
+    "precio": 21.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a3"
+    },
+    "nombre": "Bolsas de basura 30 L (rollo 25)",
+    "precio": 1.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a4"
+    },
+    "nombre": "Bolsas de basura 100 L (rollo 25)",
+    "precio": 4.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a5"
+    },
+    "nombre": "Guantes de nitrilo talla M (caja 100)",
+    "precio": 8.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a6"
+    },
+    "nombre": "Guantes de nitrilo talla L (caja 100)",
+    "precio": 8.9,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a7"
+    },
+    "nombre": "Guantes de goma talla 8",
+    "precio": 1.6,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a8"
+    },
+    "nombre": "Cepillo de WC con soporte",
+    "precio": 3.8,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016a9"
+    },
+    "nombre": "Carro de limpieza con prensa",
+    "precio": 189,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f800000000000000000016aa"
+    },
+    "nombre": "Señal de suelo mojado",
+    "precio": 14.5,
+    "activo": true,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

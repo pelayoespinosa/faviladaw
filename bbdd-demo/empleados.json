@@ -1,0 +1,2351 @@
+[
+  {
+    "_id": {
+      "$oid": "e10000000000000000000001"
+    },
+    "nombre": "Pelayo",
+    "apellidos": "Espinosa Tavira",
+    "dni": "71000001J",
+    "tlf": "625824370",
+    "email": "pelayo.espinosa@ejemplo.test",
+    "rol": "director",
+    "nass": "338263847914",
+    "cp_residencia": "33006",
+    "fecha_alta_empresa": {
+      "$date": "2025-03-12T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1987-04-09T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": true,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 40,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000002"
+    },
+    "nombre": "Patricia",
+    "apellidos": "Cuervo Arias",
+    "dni": "40082161S",
+    "tlf": "640936427",
+    "email": "patricia.cuervo@ejemplo.test",
+    "rol": "administrativo",
+    "nass": "335266420252",
+    "cp_residencia": "33001",
+    "fecha_alta_empresa": {
+      "$date": "2015-12-08T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2001-06-21T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": false,
+    "especialidades": [],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000003"
+    },
+    "nombre": "Covadonga",
+    "apellidos": "Díaz Martínez",
+    "dni": "42363949L",
+    "tlf": "665194107",
+    "email": "covadonga.diaz@ejemplo.test",
+    "rol": "encargado",
+    "nass": "331379751116",
+    "cp_residencia": "33006",
+    "fecha_alta_empresa": {
+      "$date": "2023-05-08T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1999-09-22T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": false,
+    "especialidades": [],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000004"
+    },
+    "nombre": "Alejandro Jesús",
+    "apellidos": "Trabanco Sierra",
+    "dni": "46611529M",
+    "tlf": "628560344",
+    "email": "alejandro.trabanco@ejemplo.test",
+    "rol": "encargado",
+    "nass": "335695301845",
+    "cp_residencia": "33209",
+    "fecha_alta_empresa": {
+      "$date": "2019-04-18T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1996-10-02T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": false,
+    "especialidades": [],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "410",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000005"
+    },
+    "nombre": "Miguel",
+    "apellidos": "Sierra Quirós",
+    "dni": "13842524C",
+    "tlf": "650448736",
+    "email": "miguel.sierra@ejemplo.test",
+    "rol": "encargado",
+    "nass": "338895496123",
+    "cp_residencia": "33450",
+    "fecha_alta_empresa": {
+      "$date": "2022-03-13T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1971-07-27T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": false,
+    "especialidades": [],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000006"
+    },
+    "nombre": "Elena",
+    "apellidos": "Alonso Folgueras",
+    "dni": "31046822L",
+    "tlf": "675239214",
+    "email": "elena.alonso@ejemplo.test",
+    "rol": "conductor",
+    "nass": "337510782275",
+    "cp_residencia": "33430",
+    "fecha_alta_empresa": {
+      "$date": "2012-10-27T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1975-07-20T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0,
+    "_conduccion": 5
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000007"
+    },
+    "nombre": "Carlos",
+    "apellidos": "Pando Ruiz",
+    "dni": "54720667X",
+    "tlf": "610115924",
+    "email": "carlos.pando@ejemplo.test",
+    "rol": "conductor",
+    "nass": "336925243272",
+    "cp_residencia": "33209",
+    "fecha_alta_empresa": {
+      "$date": "2019-11-24T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1971-04-24T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0,
+    "_conduccion": 5
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000008"
+    },
+    "nombre": "Alejandro",
+    "apellidos": "Valle Bernardo",
+    "dni": "15891351F",
+    "tlf": "653911336",
+    "email": "alejandro.valle@ejemplo.test",
+    "rol": "conductor",
+    "nass": "338756815124",
+    "cp_residencia": "33207",
+    "fecha_alta_empresa": {
+      "$date": "2019-02-24T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2001-06-11T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0,
+    "_conduccion": 7.5
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000009"
+    },
+    "nombre": "Iñaki",
+    "apellidos": "Rionda Zapico",
+    "dni": "16174200W",
+    "tlf": "679079949",
+    "email": "inaki.rionda@ejemplo.test",
+    "rol": "peon",
+    "nass": "337812937490",
+    "cp_residencia": "33001",
+    "fecha_alta_empresa": {
+      "$date": "2025-06-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1977-05-20T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000a"
+    },
+    "nombre": "Rosa",
+    "apellidos": "Faes Viña",
+    "dni": "55897924N",
+    "tlf": "632425796",
+    "email": "rosa.faes@ejemplo.test",
+    "rol": "peon",
+    "nass": "333823837578",
+    "cp_residencia": "33402",
+    "fecha_alta_empresa": {
+      "$date": "2019-07-14T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1999-06-26T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "portal",
+      "soportal"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "200",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000b"
+    },
+    "nombre": "Laura",
+    "apellidos": "Cuervo Villa",
+    "dni": "64678057X",
+    "tlf": "680430219",
+    "email": "laura.cuervo@ejemplo.test",
+    "rol": "peon",
+    "nass": "333249185570",
+    "cp_residencia": "33209",
+    "fecha_alta_empresa": {
+      "$date": "2017-08-23T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2003-02-21T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 20,
+    "ctto": "289",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0,
+    "_sobreContrato": 3
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000c"
+    },
+    "nombre": "Rosa",
+    "apellidos": "Iglesias Rionda",
+    "dni": "45341224J",
+    "tlf": "653388789",
+    "email": "rosa.iglesias@ejemplo.test",
+    "rol": "peon",
+    "nass": "338640406781",
+    "cp_residencia": "33205",
+    "fecha_alta_empresa": {
+      "$date": "2016-02-03T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1995-04-28T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000d"
+    },
+    "nombre": "Manuel",
+    "apellidos": "Collado Pérez",
+    "dni": "15896885K",
+    "tlf": "661096142",
+    "email": "manuel.collado@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336842904373",
+    "cp_residencia": "33560",
+    "fecha_alta_empresa": {
+      "$date": "2021-10-20T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1975-08-26T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 12.5,
+    "ctto": "200",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000e"
+    },
+    "nombre": "Covadonga",
+    "apellidos": "Corte Arias",
+    "dni": "60024883N",
+    "tlf": "651968850",
+    "email": "covadonga.corte@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "338203228648",
+    "cp_residencia": "33980",
+    "fecha_alta_empresa": {
+      "$date": "2013-06-03T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1989-07-19T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 30,
+    "ctto": "200",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000000f"
+    },
+    "nombre": "Raquel",
+    "apellidos": "Rubio Pérez",
+    "dni": "10136962B",
+    "tlf": "681479576",
+    "email": "raquel.rubio@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "339376832714",
+    "cp_residencia": "33600",
+    "fecha_alta_empresa": {
+      "$date": "2018-11-02T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1987-05-26T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 20,
+    "ctto": "289",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000010"
+    },
+    "nombre": "Iñaki",
+    "apellidos": "Cano Cano",
+    "dni": "52107945L",
+    "tlf": "664647180",
+    "email": "inaki.cano@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337734063027",
+    "cp_residencia": "33500",
+    "fecha_alta_empresa": {
+      "$date": "2016-02-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2003-03-15T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "289",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000011"
+    },
+    "nombre": "Natalia",
+    "apellidos": "Álvarez Llano",
+    "dni": "46877580S",
+    "tlf": "674022854",
+    "email": "natalia.alvarez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336498382264",
+    "cp_residencia": "33510",
+    "fecha_alta_empresa": {
+      "$date": "2020-02-21T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1983-06-13T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000012"
+    },
+    "nombre": "Manuel",
+    "apellidos": "Fernández Nava",
+    "dni": "41794725E",
+    "tlf": "686963977",
+    "email": "manuel.fernandez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336569922167",
+    "cp_residencia": "33405",
+    "fecha_alta_empresa": {
+      "$date": "2017-07-25T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1984-10-15T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_general",
+      "abrillantado"
+    ],
+    "horas_semanales_contrato": 12.5,
+    "ctto": "200",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000013"
+    },
+    "nombre": "Sergio",
+    "apellidos": "Nava Miranda",
+    "dni": "33178818F",
+    "tlf": "620769190",
+    "email": "sergio.nava@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337872382671",
+    "cp_residencia": "33207",
+    "fecha_alta_empresa": {
+      "$date": "2025-05-04T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1972-08-03T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000014"
+    },
+    "nombre": "Adrián Jesús",
+    "apellidos": "Cuesta Lorenzo",
+    "dni": "66352096V",
+    "tlf": "646936463",
+    "email": "adrian.cuesta@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "332818923725",
+    "cp_residencia": "33120",
+    "fecha_alta_empresa": {
+      "$date": "2025-05-06T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1970-10-10T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 30,
+    "ctto": "502",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000015"
+    },
+    "nombre": "Rocío",
+    "apellidos": "Villa García",
+    "dni": "45904373F",
+    "tlf": "672925017",
+    "email": "rocio.villa@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "331550023522",
+    "cp_residencia": "33006",
+    "fecha_alta_empresa": {
+      "$date": "2025-10-06T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1997-09-16T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 35,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000016"
+    },
+    "nombre": "David",
+    "apellidos": "Trabanco Tuñón",
+    "dni": "56890057V",
+    "tlf": "688127411",
+    "email": "david.trabanco@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "332394597548",
+    "cp_residencia": "33003",
+    "fecha_alta_empresa": {
+      "$date": "2021-02-19T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1990-05-06T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 30,
+    "ctto": "289",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000017"
+    },
+    "nombre": "María Jesús",
+    "apellidos": "Sánchez Martínez",
+    "dni": "67290149S",
+    "tlf": "671861587",
+    "email": "maria.sanchez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337127226049",
+    "cp_residencia": "33510",
+    "fecha_alta_empresa": {
+      "$date": "2021-07-23T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1980-04-06T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000018"
+    },
+    "nombre": "Lorena",
+    "apellidos": "Ardura Ruiz",
+    "dni": "70111141B",
+    "tlf": "680479555",
+    "email": "lorena.ardura@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "331536685540",
+    "cp_residencia": "33205",
+    "fecha_alta_empresa": {
+      "$date": "2025-02-26T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1976-08-17T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000019"
+    },
+    "nombre": "Laura",
+    "apellidos": "Prieto Miranda",
+    "dni": "25781486G",
+    "tlf": "659883373",
+    "email": "laura.prieto@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "332573638837",
+    "cp_residencia": "33450",
+    "fecha_alta_empresa": {
+      "$date": "2023-05-20T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1999-07-07T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 35,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "nombre": "Lorena",
+    "apellidos": "Rionda Díaz",
+    "dni": "14678768F",
+    "tlf": "625654120",
+    "email": "lorena.rionda@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336424799096",
+    "cp_residencia": "33205",
+    "fecha_alta_empresa": {
+      "$date": "2020-01-26T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1964-07-21T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 15,
+    "ctto": "510",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001b"
+    },
+    "nombre": "Iván Jesús",
+    "apellidos": "Miranda Tuñón",
+    "dni": "48888323Y",
+    "tlf": "693782883",
+    "email": "ivan.miranda@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "339927248087",
+    "cp_residencia": "33400",
+    "fecha_alta_empresa": {
+      "$date": "2015-12-14T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1995-06-16T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 30,
+    "ctto": "200",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001c"
+    },
+    "nombre": "Montserrat Jesús",
+    "apellidos": "Zapico Cabrera",
+    "dni": "53231438P",
+    "tlf": "695026314",
+    "email": "montserrat.zapico@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337948956157",
+    "cp_residencia": "33450",
+    "fecha_alta_empresa": {
+      "$date": "2024-05-17T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1979-08-09T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 20,
+    "ctto": "200",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001d"
+    },
+    "nombre": "Pablo",
+    "apellidos": "Cuesta Trabanco",
+    "dni": "12204326C",
+    "tlf": "653731346",
+    "email": "pablo.cuesta@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "333824700026",
+    "cp_residencia": "33510",
+    "fecha_alta_empresa": {
+      "$date": "2021-06-09T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1984-06-17T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001e"
+    },
+    "nombre": "Adrián",
+    "apellidos": "Fernández Blanco",
+    "dni": "50784273C",
+    "tlf": "618037978",
+    "email": "adrian.fernandez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337432773657",
+    "cp_residencia": "33207",
+    "fecha_alta_empresa": {
+      "$date": "2025-05-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1973-09-27T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_general",
+      "abrillantado"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "189",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000001f"
+    },
+    "nombre": "Silvia Isabel",
+    "apellidos": "Valle Junquera",
+    "dni": "40207647J",
+    "tlf": "624745561",
+    "email": "silvia.valle@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "335768206777",
+    "cp_residencia": "33209",
+    "fecha_alta_empresa": {
+      "$date": "2022-10-08T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1988-05-15T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 25,
+    "ctto": "200",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000020"
+    },
+    "nombre": "Daniel",
+    "apellidos": "García Rodríguez",
+    "dni": "44264384X",
+    "tlf": "618142776",
+    "email": "daniel.garcia@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "338416933572",
+    "cp_residencia": "33550",
+    "fecha_alta_empresa": {
+      "$date": "2025-03-28T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1992-10-23T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 35,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000021"
+    },
+    "nombre": "Noelia",
+    "apellidos": "Tuñón Lorenzo",
+    "dni": "17200677N",
+    "tlf": "695620700",
+    "email": "noelia.tunon@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "338065257828",
+    "cp_residencia": "33011",
+    "fecha_alta_empresa": {
+      "$date": "2014-09-06T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1963-04-01T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000022"
+    },
+    "nombre": "Pilar",
+    "apellidos": "González Argüelles",
+    "dni": "24248340S",
+    "tlf": "655691609",
+    "email": "pilar.gonzalez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "339714266599",
+    "cp_residencia": "33820",
+    "fecha_alta_empresa": {
+      "$date": "2023-04-03T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1995-09-21T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_mecanizada",
+      "garaje"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "200",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000023"
+    },
+    "nombre": "Manuel",
+    "apellidos": "Bobes Suárez",
+    "dni": "09270440Z",
+    "tlf": "685375656",
+    "email": "manuel.bobes@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "333298332463",
+    "cp_residencia": "33980",
+    "fecha_alta_empresa": {
+      "$date": "2023-08-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1982-12-12T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [],
+    "horas_semanales_contrato": 15,
+    "ctto": "200",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000024"
+    },
+    "nombre": "Nuria",
+    "apellidos": "Nava Gómez",
+    "dni": "27180752L",
+    "tlf": "681371673",
+    "email": "nuria.nava@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "331482592176",
+    "cp_residencia": "33510",
+    "fecha_alta_empresa": {
+      "$date": "2021-02-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1991-05-03T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_general",
+      "abrillantado"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "510",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0,
+    "_sobreContrato": 2.5
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000025"
+    },
+    "nombre": "Diego José",
+    "apellidos": "Faes Prieto",
+    "dni": "27515425L",
+    "tlf": "649838437",
+    "email": "diego.faes@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "338594415329",
+    "cp_residencia": "33207",
+    "fecha_alta_empresa": {
+      "$date": "2025-05-08T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1988-10-23T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_general",
+      "abrillantado"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "200",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000026"
+    },
+    "nombre": "Sara",
+    "apellidos": "Faes Sánchez",
+    "dni": "62606286X",
+    "tlf": "629050278",
+    "email": "sara.faes@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "333641130720",
+    "cp_residencia": "33900",
+    "fecha_alta_empresa": {
+      "$date": "2023-08-10T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1968-10-19T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "502",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000027"
+    },
+    "nombre": "Yolanda",
+    "apellidos": "Cabrera Castaño",
+    "dni": "73782417G",
+    "tlf": "684283344",
+    "email": "yolanda.cabrera@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "335882734753",
+    "cp_residencia": "33500",
+    "fecha_alta_empresa": {
+      "$date": "2016-07-04T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2001-09-11T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "portal",
+      "soportal"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "510",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000028"
+    },
+    "nombre": "Pilar María",
+    "apellidos": "Nava García",
+    "dni": "12872318T",
+    "tlf": "699365521",
+    "email": "pilar.nava@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "332818129680",
+    "cp_residencia": "33870",
+    "fecha_alta_empresa": {
+      "$date": "2012-12-22T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1971-04-11T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 25,
+    "ctto": "289",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000029"
+    },
+    "nombre": "Irene del Carmen",
+    "apellidos": "Díaz Zapico",
+    "dni": "42164352Q",
+    "tlf": "617448906",
+    "email": "irene.diaz@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337196453154",
+    "cp_residencia": "33510",
+    "fecha_alta_empresa": {
+      "$date": "2019-03-25T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1987-03-06T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_general",
+      "abrillantado"
+    ],
+    "horas_semanales_contrato": 25,
+    "ctto": "502",
+    "dias_semana_contrato": 4,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002a"
+    },
+    "nombre": "Manuel",
+    "apellidos": "Vigil Ardura",
+    "dni": "36519758J",
+    "tlf": "646957229",
+    "email": "manuel.vigil@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337402566675",
+    "cp_residencia": "33980",
+    "fecha_alta_empresa": {
+      "$date": "2020-08-17T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1988-09-22T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "cristales"
+    ],
+    "horas_semanales_contrato": 30,
+    "ctto": "502",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002b"
+    },
+    "nombre": "Pilar",
+    "apellidos": "Miranda Tuñón",
+    "dni": "48897991Z",
+    "tlf": "658094755",
+    "email": "pilar.miranda@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "334945985399",
+    "cp_residencia": "33404",
+    "fecha_alta_empresa": {
+      "$date": "2022-06-03T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1969-01-27T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "402",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002c"
+    },
+    "nombre": "Iñaki Ángel",
+    "apellidos": "Rubio Fernández",
+    "dni": "32501356X",
+    "tlf": "650090636",
+    "email": "inaki.rubio@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "335767492616",
+    "cp_residencia": "33402",
+    "fecha_alta_empresa": {
+      "$date": "2023-02-07T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2000-01-21T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002d"
+    },
+    "nombre": "Ana",
+    "apellidos": "Bobes Sierra",
+    "dni": "29928084R",
+    "tlf": "680039957",
+    "email": "ana.bobes@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "337785493534",
+    "cp_residencia": "33120",
+    "fecha_alta_empresa": {
+      "$date": "2021-09-03T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1995-11-02T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "402",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002e"
+    },
+    "nombre": "Ana",
+    "apellidos": "Valle Faes",
+    "dni": "39055992Z",
+    "tlf": "621131351",
+    "email": "ana.valle@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "339919886913",
+    "cp_residencia": "33500",
+    "fecha_alta_empresa": {
+      "$date": "2025-09-26T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1978-07-02T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza",
+      "abrillantado",
+      "limpieza_mecanizada",
+      "garaje",
+      "portal"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e1000000000000000000002f"
+    },
+    "nombre": "Iván",
+    "apellidos": "Rodríguez Vigil",
+    "dni": "59794412R",
+    "tlf": "695687398",
+    "email": "ivan.rodriguez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "339404123462",
+    "cp_residencia": "33300",
+    "fecha_alta_empresa": {
+      "$date": "2019-11-18T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1983-07-10T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza_mecanizada",
+      "garaje"
+    ],
+    "horas_semanales_contrato": 30,
+    "ctto": "510",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000030"
+    },
+    "nombre": "Manuel Luis",
+    "apellidos": "Martínez Ruiz",
+    "dni": "29598691Z",
+    "tlf": "662177203",
+    "email": "manuel.martinez@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336591920213",
+    "cp_residencia": "33205",
+    "fecha_alta_empresa": {
+      "$date": "2022-09-28T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1977-04-04T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 35,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000031"
+    },
+    "nombre": "David José",
+    "apellidos": "Bernardo Rubio",
+    "dni": "49454352M",
+    "tlf": "618815968",
+    "email": "david.bernardo@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "336367186261",
+    "cp_residencia": "33201",
+    "fecha_alta_empresa": {
+      "$date": "2015-06-18T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "1977-10-14T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "jardin",
+      "patio"
+    ],
+    "horas_semanales_contrato": 38.5,
+    "ctto": "100",
+    "dias_semana_contrato": 5,
+    "dias_trabajo": [
+      "lunes",
+      "martes",
+      "miercoles",
+      "jueves",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "e10000000000000000000032"
+    },
+    "nombre": "Sara del Carmen",
+    "apellidos": "Castaño López",
+    "dni": "32237515W",
+    "tlf": "689919875",
+    "email": "sara.castano@ejemplo.test",
+    "rol": "limpiador",
+    "nass": "335839405451",
+    "cp_residencia": "33001",
+    "fecha_alta_empresa": {
+      "$date": "2023-01-01T00:00:00.000Z"
+    },
+    "fecha_nacimiento": {
+      "$date": "2000-12-20T00:00:00.000Z"
+    },
+    "activo": true,
+    "fecha_baja": null,
+    "revisado": true,
+    "a_revisar": false,
+    "excluir_cuadro_laboral": false,
+    "tiene_variaciones": true,
+    "especialidades": [
+      "limpieza"
+    ],
+    "horas_semanales_contrato": 20,
+    "ctto": "200",
+    "dias_semana_contrato": 3,
+    "dias_trabajo": [
+      "lunes",
+      "miercoles",
+      "viernes"
+    ],
+    "festivos_locales": [],
+    "ubicaciones": [],
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

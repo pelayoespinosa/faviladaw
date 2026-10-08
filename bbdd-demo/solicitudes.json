@@ -1,0 +1,984 @@
+[
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b0"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000094"
+    },
+    "productos": [
+      {
+        "producto": "Cepillo de barrer exterior",
+        "cantidad": 6,
+        "precio": 6.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Rasqueta de cristales 35 cm",
+        "cantidad": 5,
+        "precio": 7.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Bolsas de basura 30 L (rollo 25)",
+        "cantidad": 1,
+        "precio": 1.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Mango telescópico aluminio",
+        "cantidad": 3,
+        "precio": 12.4,
+        "es_otro": false
+      },
+      {
+        "producto": "Desengrasante multiusos 5 L",
+        "cantidad": 6,
+        "precio": 7.4,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Urgente, se ha acabado",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000006"
+    },
+    "createdAt": {
+      "$date": "2026-08-28T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-30T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-08-29T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-08-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b4"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000022"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000096"
+    },
+    "productos": [
+      {
+        "producto": "Bayeta de microfibra roja (pack 5)",
+        "cantidad": 2,
+        "precio": 4.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Ambientador aerosol 750 ml",
+        "cantidad": 6,
+        "precio": 3.7,
+        "es_otro": false
+      },
+      {
+        "producto": "Salfumán 5 L",
+        "cantidad": 3,
+        "precio": 4.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Estropajo fibra verde (pack 10)",
+        "cantidad": 1,
+        "precio": 3.9,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Dejar en el cuarto de limpieza",
+    "estado": "cancelado",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016bd"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000001f"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000c7"
+    },
+    "productos": [
+      {
+        "producto": "Gamuza de cristales",
+        "cantidad": 6,
+        "precio": 3.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Esponja doble cara (pack 10)",
+        "cantidad": 4,
+        "precio": 4.5,
+        "es_otro": false
+      },
+      {
+        "producto": "Guantes de nitrilo talla M (caja 100)",
+        "cantidad": 5,
+        "precio": 8.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Salfumán 5 L",
+        "cantidad": 6,
+        "precio": 4.9,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Urgente, se ha acabado",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-08-31T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-03T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-01T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-03T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016ba"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000001e"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000d9"
+    },
+    "productos": [
+      {
+        "producto": "Bayeta de microfibra amarilla (pack 5)",
+        "cantidad": 5,
+        "precio": 4.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregasuelos pino 5 L",
+        "cantidad": 5,
+        "precio": 6.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Guantes de nitrilo talla M (caja 100)",
+        "cantidad": 2,
+        "precio": 8.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Mango telescópico aluminio",
+        "cantidad": 4,
+        "precio": 12.4,
+        "es_otro": false
+      },
+      {
+        "producto": "Bayeta de microfibra azul (pack 5)",
+        "cantidad": 5,
+        "precio": 4.8,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000006"
+    },
+    "createdAt": {
+      "$date": "2026-09-02T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-03T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016ab"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000030"
+    },
+    "cliente": {
+      "$oid": "c1000000000000000000008c"
+    },
+    "productos": [
+      {
+        "producto": "Cubo escurridor 15 L",
+        "cantidad": 4,
+        "precio": 18.5,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregona de microfibra 40 cm",
+        "cantidad": 1,
+        "precio": 6.9,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Urgente, se ha acabado",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b8"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000016"
+    },
+    "cliente": {
+      "$oid": "c1000000000000000000006c"
+    },
+    "productos": [
+      {
+        "producto": "Bolsas de basura 100 L (rollo 25)",
+        "cantidad": 1,
+        "precio": 4.6,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregasuelos pino 5 L",
+        "cantidad": 6,
+        "precio": 6.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Cera para suelos 5 L",
+        "cantidad": 1,
+        "precio": 15.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Recogedor con cepillo",
+        "cantidad": 3,
+        "precio": 5.5,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregasuelos floral 5 L",
+        "cantidad": 5,
+        "precio": 6.2,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Dejar en el cuarto de limpieza",
+    "estado": "asignado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000006"
+    },
+    "createdAt": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-05T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b9"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000000c"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000092"
+    },
+    "productos": [
+      {
+        "producto": "Carro de limpieza con prensa",
+        "cantidad": 3,
+        "precio": 189,
+        "es_otro": false
+      },
+      {
+        "producto": "Limpiacristales 5 L",
+        "cantidad": 4,
+        "precio": 8.6,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregasuelos pino 5 L",
+        "cantidad": 5,
+        "precio": 6.2,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Dejar en el cuarto de limpieza",
+    "estado": "asignado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-09-04T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-05T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-05T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016ad"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000030"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000112"
+    },
+    "productos": [
+      {
+        "producto": "Cepillo de WC con soporte",
+        "cantidad": 4,
+        "precio": 3.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Mopa plana de microfibra 40 cm",
+        "cantidad": 1,
+        "precio": 9.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Desincrustante WC 1 L",
+        "cantidad": 5,
+        "precio": 3.4,
+        "es_otro": false
+      },
+      {
+        "producto": "Rasqueta de cristales 35 cm",
+        "cantidad": 2,
+        "precio": 7.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Pastillas de lavavajillas industrial",
+        "cantidad": 2,
+        "precio": null,
+        "es_otro": true
+      }
+    ],
+    "observaciones": "Dejar en el cuarto de limpieza",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-06T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-06T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b3"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000022"
+    },
+    "cliente": {
+      "$oid": "c1000000000000000000010e"
+    },
+    "productos": [
+      {
+        "producto": "Bolsas de basura 30 L (rollo 25)",
+        "cantidad": 4,
+        "precio": 1.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Desengrasante multiusos 5 L",
+        "cantidad": 1,
+        "precio": 7.4,
+        "es_otro": false
+      },
+      {
+        "producto": "Recogedor con cepillo",
+        "cantidad": 1,
+        "precio": 5.5,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Para esta semana",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000006"
+    },
+    "createdAt": {
+      "$date": "2026-09-07T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-10T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-08T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-10T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016ac"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000011"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000076"
+    },
+    "productos": [
+      {
+        "producto": "Salfumán 5 L",
+        "cantidad": 3,
+        "precio": 4.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Abrillantador de suelos 5 L",
+        "cantidad": 4,
+        "precio": 14.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Bolsas de basura 100 L (rollo 25)",
+        "cantidad": 1,
+        "precio": 4.6,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-09T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-09T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b6"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000007"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000be"
+    },
+    "productos": [
+      {
+        "producto": "Bayeta de microfibra verde (pack 5)",
+        "cantidad": 4,
+        "precio": 4.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Rasqueta de cristales 35 cm",
+        "cantidad": 2,
+        "precio": 7.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Jabón de manos 5 L",
+        "cantidad": 5,
+        "precio": 9.6,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-15T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-15T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016af"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000011"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000124"
+    },
+    "productos": [
+      {
+        "producto": "Mango telescópico aluminio",
+        "cantidad": 6,
+        "precio": 12.4,
+        "es_otro": false
+      },
+      {
+        "producto": "Gamuza de cristales",
+        "cantidad": 3,
+        "precio": 3.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Decapante de suelos 5 L",
+        "cantidad": 2,
+        "precio": 17.5,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "asignado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-09-17T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-18T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-18T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b1"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000009"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000116"
+    },
+    "productos": [
+      {
+        "producto": "Amoniaco 5 L",
+        "cantidad": 1,
+        "precio": 4.6,
+        "es_otro": false
+      },
+      {
+        "producto": "Bayeta de microfibra roja (pack 5)",
+        "cantidad": 4,
+        "precio": 4.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Palo de escoba de madera",
+        "cantidad": 5,
+        "precio": 2.6,
+        "es_otro": false
+      },
+      {
+        "producto": "Recogedor con cepillo",
+        "cantidad": 6,
+        "precio": 5.5,
+        "es_otro": false
+      },
+      {
+        "producto": "Mango telescópico aluminio",
+        "cantidad": 5,
+        "precio": 12.4,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000007"
+    },
+    "createdAt": {
+      "$date": "2026-09-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-26T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-24T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-26T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016bc"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000010"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000f6"
+    },
+    "productos": [
+      {
+        "producto": "Fregasuelos pino 5 L",
+        "cantidad": 3,
+        "precio": 6.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Gamuza de cristales",
+        "cantidad": 1,
+        "precio": 3.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Cabezal de escoba de interior",
+        "cantidad": 5,
+        "precio": 4.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Papel higiénico industrial (pack 12)",
+        "cantidad": 5,
+        "precio": 14.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Papel secamanos en rollo (pack 6)",
+        "cantidad": 4,
+        "precio": 21.5,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Para esta semana",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000006"
+    },
+    "createdAt": {
+      "$date": "2026-09-23T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-25T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-24T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-25T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b7"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000021"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000c9"
+    },
+    "productos": [
+      {
+        "producto": "Cepillo de WC con soporte",
+        "cantidad": 2,
+        "precio": 3.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Abrillantador de suelos 5 L",
+        "cantidad": 6,
+        "precio": 14.9,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-24T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-24T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016bb"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000002d"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000c6"
+    },
+    "productos": [
+      {
+        "producto": "Amoniaco 5 L",
+        "cantidad": 2,
+        "precio": 4.6,
+        "es_otro": false
+      },
+      {
+        "producto": "Fregasuelos pino 5 L",
+        "cantidad": 2,
+        "precio": 6.2,
+        "es_otro": false
+      },
+      {
+        "producto": "Rasqueta de cristales 35 cm",
+        "cantidad": 1,
+        "precio": 7.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Guantes de nitrilo talla M (caja 100)",
+        "cantidad": 1,
+        "precio": 8.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Abrillantador de suelos 5 L",
+        "cantidad": 4,
+        "precio": 14.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Pastillas de lavavajillas industrial",
+        "cantidad": 2,
+        "precio": null,
+        "es_otro": true
+      }
+    ],
+    "observaciones": "Para esta semana",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-09-26T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-28T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-09-27T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-09-28T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016be"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000013"
+    },
+    "cliente": {
+      "$oid": "c1000000000000000000006f"
+    },
+    "productos": [
+      {
+        "producto": "Decapante de suelos 5 L",
+        "cantidad": 3,
+        "precio": 17.5,
+        "es_otro": false
+      },
+      {
+        "producto": "Esponja doble cara (pack 10)",
+        "cantidad": 5,
+        "precio": 4.5,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Para esta semana",
+    "estado": "cancelado",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-09-28T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-28T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016ae"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000001d"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000110"
+    },
+    "productos": [
+      {
+        "producto": "Abrillantador de suelos 5 L",
+        "cantidad": 2,
+        "precio": 14.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Rasqueta de cristales 35 cm",
+        "cantidad": 4,
+        "precio": 7.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Cepillo de barrer exterior",
+        "cantidad": 2,
+        "precio": 6.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Carro de limpieza con prensa",
+        "cantidad": 1,
+        "precio": 189,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Para esta semana",
+    "estado": "asignado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-10-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-02T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-10-02T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b5"
+    },
+    "solicitante": {
+      "$oid": "e10000000000000000000010"
+    },
+    "cliente": {
+      "$oid": "c100000000000000000000b5"
+    },
+    "productos": [
+      {
+        "producto": "Salfumán 5 L",
+        "cantidad": 2,
+        "precio": 4.9,
+        "es_otro": false
+      },
+      {
+        "producto": "Papel higiénico industrial (pack 12)",
+        "cantidad": 2,
+        "precio": 14.8,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "Urgente, se ha acabado",
+    "estado": "pendiente",
+    "asignado_a": null,
+    "createdAt": {
+      "$date": "2026-10-02T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-02T00:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f900000000000000000016b2"
+    },
+    "solicitante": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "cliente": {
+      "$oid": "c10000000000000000000102"
+    },
+    "productos": [
+      {
+        "producto": "Cepillo de WC con soporte",
+        "cantidad": 4,
+        "precio": 3.8,
+        "es_otro": false
+      },
+      {
+        "producto": "Estropajo fibra verde (pack 10)",
+        "cantidad": 3,
+        "precio": 3.9,
+        "es_otro": false
+      }
+    ],
+    "observaciones": "",
+    "estado": "entregado",
+    "asignado_a": {
+      "$oid": "e10000000000000000000008"
+    },
+    "createdAt": {
+      "$date": "2026-10-03T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-10-05T00:00:00.000Z"
+    },
+    "__v": 0,
+    "fecha_asignacion": {
+      "$date": "2026-10-04T00:00:00.000Z"
+    },
+    "fecha_entrega": {
+      "$date": "2026-10-05T00:00:00.000Z"
+    }
+  }
+]

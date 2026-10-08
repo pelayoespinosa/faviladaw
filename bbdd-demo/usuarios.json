@@ -1,0 +1,1122 @@
+[
+  {
+    "_id": {
+      "$oid": "a10000000000000000000033"
+    },
+    "email": "pelayoet",
+    "password": "$2a$10$He1Ta4yzWxfBR4xQSahFN.eb7dtT1Y4JVM7fH1QoWfMwlwq4kWOwm",
+    "rol": "admin",
+    "empleado": {
+      "$oid": "e10000000000000000000001"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000034"
+    },
+    "email": "patriciaca",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "encargado",
+    "empleado": {
+      "$oid": "e10000000000000000000002"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000035"
+    },
+    "email": "covadongadm",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "encargado",
+    "empleado": {
+      "$oid": "e10000000000000000000003"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000036"
+    },
+    "email": "alejandrojesusts",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "encargado",
+    "empleado": {
+      "$oid": "e10000000000000000000004"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000037"
+    },
+    "email": "miguelsq",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "encargado",
+    "empleado": {
+      "$oid": "e10000000000000000000005"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000038"
+    },
+    "email": "elenaaf",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000006"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000039"
+    },
+    "email": "carlospr",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000007"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003a"
+    },
+    "email": "alejandrovb",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000008"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003b"
+    },
+    "email": "inakirz",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000009"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003c"
+    },
+    "email": "rosafv",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000a"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003d"
+    },
+    "email": "lauracv",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000b"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003e"
+    },
+    "email": "rosair",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000c"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000003f"
+    },
+    "email": "manuelcp",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000d"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000040"
+    },
+    "email": "covadongaca",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000e"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000041"
+    },
+    "email": "raquelrp",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000000f"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000042"
+    },
+    "email": "inakicc",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000010"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000043"
+    },
+    "email": "nataliaal",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000011"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000044"
+    },
+    "email": "manuelfn",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000012"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000045"
+    },
+    "email": "sergionm",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000013"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000046"
+    },
+    "email": "adrianjesuscl",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000014"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000047"
+    },
+    "email": "rociovg",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000015"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000048"
+    },
+    "email": "davidtt",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000016"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000049"
+    },
+    "email": "mariajesussm",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000017"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004a"
+    },
+    "email": "lorenaar",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000018"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004b"
+    },
+    "email": "laurapm",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000019"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004c"
+    },
+    "email": "lorenard",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001a"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004d"
+    },
+    "email": "ivanjesusmt",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001b"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004e"
+    },
+    "email": "montserratjesuszc",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001c"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000004f"
+    },
+    "email": "pabloct",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001d"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000050"
+    },
+    "email": "adrianfb",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001e"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000051"
+    },
+    "email": "silviaisabelvj",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000001f"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000052"
+    },
+    "email": "danielgr",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000020"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000053"
+    },
+    "email": "noeliatl",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000021"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000054"
+    },
+    "email": "pilarga",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000022"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000055"
+    },
+    "email": "manuelbs",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000023"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000056"
+    },
+    "email": "nuriang",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000024"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000057"
+    },
+    "email": "diegojosefp",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000025"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000058"
+    },
+    "email": "sarafs",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000026"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000059"
+    },
+    "email": "yolandacc",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000027"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005a"
+    },
+    "email": "pilarmariang",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000028"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005b"
+    },
+    "email": "irenedelcarmendz",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000029"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005c"
+    },
+    "email": "manuelva",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002a"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005d"
+    },
+    "email": "pilarmt",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002b"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005e"
+    },
+    "email": "inakiangelrf",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002c"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a1000000000000000000005f"
+    },
+    "email": "anabs",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002d"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000060"
+    },
+    "email": "anavf",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002e"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000061"
+    },
+    "email": "ivanrv",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e1000000000000000000002f"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000062"
+    },
+    "email": "manuelluismr",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000030"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000063"
+    },
+    "email": "davidjosebr",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000031"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000064"
+    },
+    "email": "saradelcarmencl",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "empleado",
+    "empleado": {
+      "$oid": "e10000000000000000000032"
+    },
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "a10000000000000000000065"
+    },
+    "email": "gestoria",
+    "password": "$2a$10$h6NtAC35h7lIry31zQNo3.SMuAhpYpDpDqfI1SaiD4GnPvjOqMhVC",
+    "rol": "gestoria",
+    "empleado": null,
+    "activo": true,
+    "debe_cambiar_password": false,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "createdAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-09-30T08:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

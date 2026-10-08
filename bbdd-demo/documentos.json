@@ -1,0 +1,2517 @@
+[
+  {
+    "_id": {
+      "$oid": "d20000000000000000000001"
+    },
+    "titulo": "Términos y condiciones de uso de Favila",
+    "descripcion": "Condiciones de uso de la aplicación para toda la plantilla. Hay que leerlas y confirmarlas.",
+    "carpeta": "Legal",
+    "nombre_archivo_original": "terminos-y-condiciones.pdf",
+    "nombre_archivo_storage": "demo-terminos-y-condiciones.pdf",
+    "tipo_destinatario": "todos",
+    "requiere_confirmacion": true,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000001"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T17:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000002"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T11:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T12:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000003"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000004"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T11:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T13:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000005"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T09:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T13:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T17:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000009"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T10:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T15:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T15:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:30:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T15:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T15:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T15:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000010"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000011"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T15:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T17:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000012"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000013"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T15:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T17:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000014"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T18:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000015"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000016"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000017"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T15:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000018"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T13:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T13:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000019"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T11:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T12:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T10:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T15:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000020"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T11:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000021"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T10:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000022"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000023"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000024"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T13:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T13:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000025"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000026"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T12:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000027"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T13:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000028"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000029"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T13:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T15:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T12:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T18:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T14:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T10:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T16:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T16:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T10:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000030"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T09:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T11:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000031"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T12:30:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T14:32:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000032"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:30:00.000Z"
+        },
+        "conforme": false
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-01-09T09:30:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-09T09:30:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "d20000000000000000000002"
+    },
+    "titulo": "Información sobre protección de datos y registro de jornada",
+    "descripcion": "Qué datos personales trata la empresa, para qué y durante cuánto tiempo.",
+    "carpeta": "Legal",
+    "nombre_archivo_original": "proteccion-de-datos.pdf",
+    "nombre_archivo_storage": "demo-proteccion-de-datos.pdf",
+    "tipo_destinatario": "todos",
+    "requiere_confirmacion": true,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000001"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T16:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000002"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T16:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T17:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000003"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T14:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000004"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T15:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000005"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T10:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T11:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T14:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T15:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T17:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000009"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T10:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T11:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T14:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T15:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T16:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T18:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000010"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T15:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000011"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000012"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:45:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000013"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T10:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T11:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000014"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000015"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T10:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T11:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000016"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T09:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T10:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000017"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T14:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000018"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T14:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T15:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000019"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T13:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000020"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T15:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000021"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T11:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T11:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000022"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-12T09:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-12T09:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000023"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-14T16:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-14T17:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000024"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000025"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000026"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T10:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T10:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000027"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:45:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000028"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T15:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T17:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000029"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T09:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T16:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T14:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T09:45:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T12:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T12:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-10T14:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-10T16:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-15T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-15T14:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000030"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-13T14:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-13T15:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000031"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-01-11T13:45:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-01-11T14:47:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000032"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-01-09T09:45:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-09T09:45:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "d20000000000000000000003"
+    },
+    "titulo": "Protocolo de prevención de riesgos en servicios de limpieza",
+    "descripcion": "Normas básicas de seguridad: productos químicos, posturas, suelos mojados y trabajo en altura.",
+    "carpeta": "Prevención",
+    "nombre_archivo_original": "prevencion-riesgos-limpieza.pdf",
+    "nombre_archivo_storage": "demo-prevencion-riesgos-limpieza.pdf",
+    "tipo_destinatario": "todos",
+    "requiere_confirmacion": true,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000001"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T14:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T15:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000002"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000003"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000004"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-07T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-07T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000005"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T08:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T10:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-08T08:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-08T08:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-07T14:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-07T16:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000009"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T15:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T10:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-08T12:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-08T14:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000010"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000011"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T10:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000012"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000013"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000014"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-08T14:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-08T14:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000015"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T09:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000016"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T14:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T15:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000017"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000018"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T14:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000019"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T15:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T12:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001b"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-07T10:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-07T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-07T10:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-07T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-08T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-08T13:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-08T08:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-08T09:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000020"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000021"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000022"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000023"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000024"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000025"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T12:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T12:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000026"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T10:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000027"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T09:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000028"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000029"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T15:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T15:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002a"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-05T10:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-05T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002c"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T08:00:00.000Z"
+        },
+        "conforme": false
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002d"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T11:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002e"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-04T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-04T10:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002f"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-03T15:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-03T16:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000030"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-07T11:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-07T12:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000031"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T12:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T12:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000032"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-03-06T09:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-03-06T11:02:00.000Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-03-02T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-02T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "d20000000000000000000004"
+    },
+    "titulo": "Normas de uso de las furgonetas de empresa",
+    "descripcion": "Uso, combustible, incidencias y entrega de llaves. Para conductores.",
+    "carpeta": "Flota",
+    "nombre_archivo_original": "normas-furgonetas.pdf",
+    "nombre_archivo_storage": "demo-normas-furgonetas.pdf",
+    "tipo_destinatario": "grupo",
+    "grupo": "conductor",
+    "requiere_confirmacion": true,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-02-19T14:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-02-19T16:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-02-19T16:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-02-19T18:02:00.000Z"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        },
+        "recibido": true,
+        "fecha_recibido": {
+          "$date": "2026-02-18T13:00:00.000Z"
+        },
+        "conforme": true,
+        "fecha_conforme": {
+          "$date": "2026-02-18T13:02:00.000Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-02-16T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-16T10:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "d20000000000000000000005"
+    },
+    "titulo": "Calendario laboral 2026",
+    "descripcion": "Festivos nacionales y de Asturias para 2026. Solo consulta.",
+    "carpeta": "General",
+    "nombre_archivo_original": "calendario-laboral-2026.pdf",
+    "nombre_archivo_storage": "demo-calendario-laboral-2026.pdf",
+    "tipo_destinatario": "todos",
+    "requiere_confirmacion": false,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000001"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000002"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000003"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000004"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000005"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000009"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000010"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000011"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000012"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000013"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000014"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000015"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000016"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000017"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000018"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000019"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000020"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000021"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000022"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000023"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000024"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000025"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000026"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000027"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000028"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000029"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000030"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000031"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000032"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-01-05T08:30:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-05T08:30:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "d20000000000000000000006"
+    },
+    "titulo": "Guía rápida para fichar desde el móvil",
+    "descripcion": "Cómo instalar la aplicación y fichar la entrada y la salida paso a paso.",
+    "carpeta": "General",
+    "nombre_archivo_original": "guia-para-fichar.pdf",
+    "nombre_archivo_storage": "demo-guia-para-fichar.pdf",
+    "tipo_destinatario": "todos",
+    "requiere_confirmacion": false,
+    "subido_por": {
+      "$oid": "a10000000000000000000033"
+    },
+    "confirmaciones": [
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000001"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000002"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000003"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000004"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000005"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000006"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000007"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000008"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000009"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000000f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000010"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000011"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000012"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000013"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000014"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000015"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000016"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000017"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000018"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000019"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000001f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000020"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000021"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000022"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000023"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000024"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000025"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000026"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000027"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000028"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000029"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002a"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002b"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002c"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002d"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002e"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e1000000000000000000002f"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000030"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000031"
+        }
+      },
+      {
+        "empleado": {
+          "$oid": "e10000000000000000000032"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2026-01-12T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-12T12:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

@@ -1,0 +1,16 @@
+module.exports.COLECCIONES = {
+  empleados: 'empleados',
+  usuarios: 'usuarios',
+  clientes: 'clientes',
+  productos: 'productos',
+  precios_servicio: 'precioservicios',
+  furgonetas: 'furgonetas',
+  turnos: 'turnos',
+  ausencias: 'ausencias',
+  coberturas: 'coberturas',
+  fichajes: 'fichajes',
+  solicitudes: 'solicituds',
+  cuadros_laborales: 'cuadrolaborals',
+  carpetas: 'carpetas',
+  documentos: 'documentos',
+};

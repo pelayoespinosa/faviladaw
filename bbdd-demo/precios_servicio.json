@@ -1,0 +1,212 @@
+[
+  {
+    "_id": {
+      "$oid": "fa000000000000000000015b"
+    },
+    "tipo_tarea": "limpieza",
+    "precio_hora": 19,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa000000000000000000015c"
+    },
+    "tipo_tarea": "limpieza_general",
+    "precio_hora": 25,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa000000000000000000015d"
+    },
+    "tipo_tarea": "cristales",
+    "precio_hora": 23,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa000000000000000000015e"
+    },
+    "tipo_tarea": "cubos",
+    "precio_hora": 18.5,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa000000000000000000015f"
+    },
+    "tipo_tarea": "basuras",
+    "precio_hora": 17,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000160"
+    },
+    "tipo_tarea": "jardin",
+    "precio_hora": 24,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000161"
+    },
+    "tipo_tarea": "patio_general",
+    "precio_hora": 18,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000162"
+    },
+    "tipo_tarea": "garaje_general",
+    "precio_hora": 18.5,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000163"
+    },
+    "tipo_tarea": "abrillantado",
+    "precio_hora": 90,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000164"
+    },
+    "tipo_tarea": "limpieza_mecanizada",
+    "precio_hora": 45,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000165"
+    },
+    "tipo_tarea": "garaje",
+    "precio_hora": 45,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000166"
+    },
+    "tipo_tarea": "patio",
+    "precio_hora": 50,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000167"
+    },
+    "tipo_tarea": "portal",
+    "precio_hora": 45,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000168"
+    },
+    "tipo_tarea": "soportal",
+    "precio_hora": 45,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "fa0000000000000000000169"
+    },
+    "tipo_tarea": "otros",
+    "precio_hora": 20,
+    "createdAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-03T09:00:00.000Z"
+    },
+    "__v": 0
+  }
+]

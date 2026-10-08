@@ -1,0 +1,90 @@
+[
+  {
+    "_id": {
+      "$oid": "f30000000000000000000155"
+    },
+    "numero": "F-1",
+    "matricula": "5312 KBV",
+    "modelo": "Citroën Berlingo Van",
+    "tarjeta_combustible": "7001 7058 2628",
+    "contacto_aseguradora": "985 260 411",
+    "conductores": [
+      {
+        "$oid": "e10000000000000000000006"
+      }
+    ],
+    "observaciones": "Reparto de material y apoyo a servicios mecanizados.",
+    "notas": [
+      {
+        "texto": "ITV pasada, próxima en 2027",
+        "fecha": {
+          "$date": "2026-03-18T10:00:00.000Z"
+        },
+        "createdAt": {
+          "$date": "2026-03-18T10:00:00.000Z"
+        },
+        "updatedAt": {
+          "$date": "2026-03-18T10:00:00.000Z"
+        }
+      }
+    ],
+    "archivos": [],
+    "createdAt": {
+      "$date": "2025-11-10T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-18T10:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f30000000000000000000157"
+    },
+    "numero": "F-2",
+    "matricula": "7740 LDC",
+    "modelo": "Renault Kangoo Express",
+    "tarjeta_combustible": "7001 8432 9585",
+    "contacto_aseguradora": "985 260 412",
+    "conductores": [
+      {
+        "$oid": "e10000000000000000000007"
+      }
+    ],
+    "observaciones": "Reparto de material y apoyo a servicios mecanizados.",
+    "notas": [],
+    "archivos": [],
+    "createdAt": {
+      "$date": "2025-11-10T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-18T10:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "f30000000000000000000159"
+    },
+    "numero": "F-3",
+    "matricula": "2905 MPF",
+    "modelo": "Peugeot Partner",
+    "tarjeta_combustible": "7001 7439 9516",
+    "contacto_aseguradora": "985 260 413",
+    "conductores": [
+      {
+        "$oid": "e10000000000000000000008"
+      }
+    ],
+    "observaciones": "Reparto de material y apoyo a servicios mecanizados.",
+    "notas": [],
+    "archivos": [],
+    "createdAt": {
+      "$date": "2025-11-10T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-18T10:00:00.000Z"
+    },
+    "__v": 0
+  }
+]
