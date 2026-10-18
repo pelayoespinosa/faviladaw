@@ -3,7 +3,6 @@ client/node_modules
 
 # env
 .env
-.env.local
 
 # build output
 public
@@ -24,9 +23,6 @@ npm-debug.log*
 .vscode/*
 !.vscode/extensions.json
 .idea
-
-# macOS zip artifacts
-__MACOSX
 
 # nested OS files
 **/.DS_Store
