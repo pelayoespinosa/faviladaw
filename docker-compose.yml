@@ -1,0 +1,46 @@
+services:
+  api:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MONGO_URI: mongodb://mongo:27017/favila
+      VIRTUAL_HOST: ${DOMINIO:-localhost}
+      VIRTUAL_PATH: /faviladaw
+      VIRTUAL_DEST: /
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: ${DOMINIO:-localhost}
+    depends_on:
+      mongo:
+        condition: service_healthy
+    volumes:
+      - ./public:/app/public:ro
+      - uploads:/app/uploads
+    networks:
+      - interna
+      - proxy
+
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - mongo-datos:/data/db
+    networks:
+      - interna
+
+volumes:
+  mongo-datos:
+  uploads:
+
+networks:
+  # Sin salida a internet: solo la API habla con MongoDB
+  interna:
+    internal: true
+  # Red del proxy inverso (nginx-proxy), creada fuera de este proyecto
+  proxy:
+    external: true
