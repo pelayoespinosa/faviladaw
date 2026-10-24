@@ -32,8 +32,8 @@ Contraseña de todas: `Baliza2026`, salvo `pelayoet` (admin, director), que entr
 ## Uso
 
 ```bash
-node datos-demo/importar.js        # carga los JSON en la base del .env (borra esas colecciones)
-node datos-demo/generar-todo.js    # regenera todos los JSON (necesita MongoDB en marcha)
+node bbdd-demo/importar.js        # carga los JSON en la base del .env (borra esas colecciones)
+node bbdd-demo/generar-todo.js    # regenera todos los JSON (necesita MongoDB en marcha)
 ```
 
 `generar-todo.js` ejecuta en orden `generar.js` (empleados, cuentas, clientes), `generar-operativa.js` (turnos, ausencias, coberturas, fichajes, productos…) y `generar-cuadros.js` (arranca el servidor contra una base temporal y genera los cuadros mes a mes).
