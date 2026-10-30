@@ -1,5 +1,8 @@
 const router    = require('express').Router();
 const Fichaje = require('../models/Fichaje');
+const Turno = require('../models/Turno');
+const { validarUbicacion } = require('../utils/validacionUbicacion');
+const { clientesDeHoy } = require('../utils/turnosDeHoy');
 const { generarPDFFichajes } = require('../utils/pdfFichajes');
 const { generarXLSXFichajes } = require('../utils/xlsxFichajes');
 const { generarPDFFichaje } = require('../utils/pdfFichaje');
@@ -16,6 +19,18 @@ function ubicacionDelBody(req) {
 }
 
 const confirmacionDe = req => ({ dispositivo: dispositivoDe(req), ip: req.ip });
+
+async function validacionDe(empleadoId, ubicacion) {
+  try {
+    const turnos = await Turno.find({ empleado: empleadoId, cliente: { $ne: null } })
+      .populate('cliente', 'lat lng radio_validacion_m')
+      .lean();
+    return validarUbicacion({ posicion: ubicacion, referencias: clientesDeHoy(turnos) });
+  } catch (e) {
+    console.error('No se pudo validar la ubicación del fichaje:', e.message);
+    return undefined;
+  }
+}
 
 const populate = q => q.populate('empleado', 'nombre apellidos dni nass');
 
@@ -52,10 +67,12 @@ router.post('/entrada', async (req, res) => {
   const ubicacion = ubicacionDelBody(req);
   if (!ubicacion) return res.status(400).json({ error: 'Se necesita tu ubicación para fichar. Activa el permiso de ubicación e inténtalo de nuevo.', error_code: 'UBICACION_REQUERIDA' });
 
+  const validacion = await validacionDe(req.user.empleadoId, ubicacion);
+
   try {
     const f = await Fichaje.create({
       empleado: req.user.empleadoId,
-      entrada: { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req) },
+      entrada: { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req), validacion },
     });
     res.status(201).json(f);
   } catch (e) { res.status(400).json({ error: e.message }); }
