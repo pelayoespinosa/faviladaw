@@ -1,6 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { hoyEnMadrid, clientesDeHoy } = require('../src/utils/turnosDeHoy');
+const { hoyEnMadrid, clientesDeHoy, motivoSinReferencia } = require('../src/utils/turnosDeHoy');
+const { validarUbicacion } = require('../src/utils/validacionUbicacion');
 
 const martes = new Date('2026-11-03T10:00:00Z');
 const cliente = nombre => ({ nombre, lat: 43.36, lng: -5.85 });
@@ -45,4 +46,60 @@ test('con varios turnos devuelve todos los clientes de hoy', () => {
     { cliente: cliente('C'), dias_semana: ['viernes'], frecuencia: 'semanal' },
   ];
   assert.deepEqual(clientesDeHoy(turnos, martes).map(c => c.nombre), ['A', 'B']);
+});
+
+const posicion = { lat: 43.36, lng: -5.85, precision: 8 };
+
+function validarDeHoy(turnos) {
+  const resultado = validarUbicacion({ posicion, referencias: clientesDeHoy(turnos, martes) });
+  if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(turnos, martes);
+  return resultado;
+}
+
+test('sin turnos es sin_referencia con motivo sin_turno', () => {
+  const r = validarDeHoy([]);
+  assert.equal(r.estado, 'sin_referencia');
+  assert.equal(r.motivo, 'sin_turno');
+});
+
+test('con turnos solo de otros días es sin_referencia con motivo sin_turno', () => {
+  const r = validarDeHoy([{ cliente: cliente('A'), dias_semana: ['jueves'], frecuencia: 'semanal' }]);
+  assert.equal(r.estado, 'sin_referencia');
+  assert.equal(r.motivo, 'sin_turno');
+});
+
+test('un turno de furgoneta hoy es sin_referencia con motivo turno_furgoneta', () => {
+  const r = validarDeHoy([{ furgoneta: 'f1', dias_semana: ['martes'], frecuencia: 'semanal' }]);
+  assert.equal(r.estado, 'sin_referencia');
+  assert.equal(r.motivo, 'turno_furgoneta');
+});
+
+test('un cliente sin coordenadas es sin_referencia con motivo cliente_sin_coordenadas', () => {
+  const r = validarDeHoy([{ cliente: { nombre: 'A', lat: null, lng: null }, dias_semana: ['martes'], frecuencia: 'semanal' }]);
+  assert.equal(r.estado, 'sin_referencia');
+  assert.equal(r.motivo, 'cliente_sin_coordenadas');
+});
+
+test('furgoneta y cliente sin coordenadas el mismo día dan cliente_sin_coordenadas', () => {
+  const r = validarDeHoy([
+    { furgoneta: 'f1', dias_semana: ['martes'], frecuencia: 'semanal' },
+    { cliente: { nombre: 'A', lat: null, lng: null }, dias_semana: ['martes'], frecuencia: 'semanal' },
+  ]);
+  assert.equal(r.motivo, 'cliente_sin_coordenadas');
+});
+
+test('un cliente con coordenadas junto a una furgoneta sí se valida', () => {
+  const r = validarDeHoy([
+    { furgoneta: 'f1', dias_semana: ['martes'], frecuencia: 'semanal' },
+    { cliente: cliente('A'), dias_semana: ['martes'], frecuencia: 'semanal' },
+  ]);
+  assert.equal(r.estado, 'dentro');
+});
+
+test('un cliente sin coordenadas junto a otro con coordenadas usa el segundo', () => {
+  const r = validarDeHoy([
+    { cliente: { nombre: 'A', lat: null, lng: null }, dias_semana: ['martes'], frecuencia: 'semanal' },
+    { cliente: cliente('B'), dias_semana: ['martes'], frecuencia: 'semanal' },
+  ]);
+  assert.equal(r.estado, 'dentro');
 });

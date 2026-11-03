@@ -2,7 +2,7 @@ const router    = require('express').Router();
 const Fichaje = require('../models/Fichaje');
 const Turno = require('../models/Turno');
 const { validarUbicacion } = require('../utils/validacionUbicacion');
-const { clientesDeHoy } = require('../utils/turnosDeHoy');
+const { clientesDeHoy, motivoSinReferencia } = require('../utils/turnosDeHoy');
 const { generarPDFFichajes } = require('../utils/pdfFichajes');
 const { generarXLSXFichajes } = require('../utils/xlsxFichajes');
 const { generarPDFFichaje } = require('../utils/pdfFichaje');
@@ -22,10 +22,12 @@ const confirmacionDe = req => ({ dispositivo: dispositivoDe(req), ip: req.ip });
 
 async function validacionDe(empleadoId, ubicacion) {
   try {
-    const turnos = await Turno.find({ empleado: empleadoId, cliente: { $ne: null } })
+    const turnos = await Turno.find({ empleado: empleadoId })
       .populate('cliente', 'lat lng radio_validacion_m')
       .lean();
-    return validarUbicacion({ posicion: ubicacion, referencias: clientesDeHoy(turnos) });
+    const resultado = validarUbicacion({ posicion: ubicacion, referencias: clientesDeHoy(turnos) });
+    if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(turnos);
+    return resultado;
   } catch (e) {
     console.error('No se pudo validar la ubicación del fichaje:', e.message);
     return undefined;
