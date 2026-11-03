@@ -1,8 +1,9 @@
 const router    = require('express').Router();
 const Fichaje = require('../models/Fichaje');
 const Turno = require('../models/Turno');
+const Cobertura = require('../models/Cobertura');
 const { validarUbicacion } = require('../utils/validacionUbicacion');
-const { clientesDeHoy, motivoSinReferencia } = require('../utils/turnosDeHoy');
+const { hoyEnMadrid, turnosEfectivosHoy, clientesDeTurnos, motivoSinReferencia } = require('../utils/turnosDeHoy');
 const { generarPDFFichajes } = require('../utils/pdfFichajes');
 const { generarXLSXFichajes } = require('../utils/xlsxFichajes');
 const { generarPDFFichaje } = require('../utils/pdfFichaje');
@@ -20,13 +21,22 @@ function ubicacionDelBody(req) {
 
 const confirmacionDe = req => ({ dispositivo: dispositivoDe(req), ip: req.ip });
 
+const CAMPOS_CLIENTE = 'lat lng radio_validacion_m';
+
 async function validacionDe(empleadoId, ubicacion) {
   try {
-    const turnos = await Turno.find({ empleado: empleadoId })
-      .populate('cliente', 'lat lng radio_validacion_m')
-      .lean();
-    const resultado = validarUbicacion({ posicion: ubicacion, referencias: clientesDeHoy(turnos) });
-    if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(turnos);
+    const { fecha } = hoyEnMadrid();
+    const coberturas = await Cobertura.find({
+      empleado_cubre: empleadoId,
+      fecha: { $gte: new Date(`${fecha}T00:00:00.000Z`), $lte: new Date(`${fecha}T23:59:59.999Z`) },
+    }).populate({ path: 'turno', populate: { path: 'cliente', select: CAMPOS_CLIENTE } }).lean();
+
+    const empleados = [empleadoId, ...coberturas.filter(c => !c.turno).map(c => c.empleado_ausente)];
+    const turnos = await Turno.find({ empleado: { $in: empleados } }).populate('cliente', CAMPOS_CLIENTE).lean();
+
+    const deHoy = turnosEfectivosHoy({ empleadoId, turnos, coberturas });
+    const resultado = validarUbicacion({ posicion: ubicacion, referencias: clientesDeTurnos(deHoy) });
+    if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(deHoy);
     return resultado;
   } catch (e) {
     console.error('No se pudo validar la ubicación del fichaje:', e.message);

@@ -13,15 +13,29 @@ function turnosDeHoy(turnos, ahora = new Date()) {
       || (t.proxima_fecha && new Date(t.proxima_fecha).toISOString().slice(0, 10) === fecha));
 }
 
-function clientesDeHoy(turnos, ahora = new Date()) {
-  return turnosDeHoy(turnos, ahora).filter(t => t.cliente).map(t => t.cliente);
+function turnosEfectivosHoy({ empleadoId, turnos, coberturas = [] }, ahora = new Date()) {
+  const { fecha } = hoyEnMadrid(ahora);
+  const deEmpleado = id => turnos.filter(t => String(t.empleado) === String(id));
+  const propios = turnosDeHoy(deEmpleado(empleadoId), ahora);
+  const cubiertos = coberturas
+    .filter(c => String(c.empleado_cubre) === String(empleadoId)
+      && new Date(c.fecha).toISOString().slice(0, 10) === fecha)
+    .flatMap(c => c.turno ? [c.turno] : turnosDeHoy(deEmpleado(c.empleado_ausente), ahora));
+  return [...propios, ...cubiertos];
 }
 
-function motivoSinReferencia(turnos, ahora = new Date()) {
-  const deHoy = turnosDeHoy(turnos, ahora);
-  if (!deHoy.length) return 'sin_turno';
-  if (deHoy.every(t => !t.cliente)) return 'turno_furgoneta';
+function clientesDeTurnos(turnos) {
+  return turnos.filter(t => t.cliente).map(t => t.cliente);
+}
+
+function clientesDeHoy(turnos, ahora = new Date()) {
+  return clientesDeTurnos(turnosDeHoy(turnos, ahora));
+}
+
+function motivoSinReferencia(turnosDeHoyEfectivos) {
+  if (!turnosDeHoyEfectivos.length) return 'sin_turno';
+  if (turnosDeHoyEfectivos.every(t => !t.cliente)) return 'turno_furgoneta';
   return 'cliente_sin_coordenadas';
 }
 
-module.exports = { hoyEnMadrid, turnosDeHoy, clientesDeHoy, motivoSinReferencia };
+module.exports = { hoyEnMadrid, turnosDeHoy, turnosEfectivosHoy, clientesDeTurnos, clientesDeHoy, motivoSinReferencia };

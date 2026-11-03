@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { hoyEnMadrid, clientesDeHoy, motivoSinReferencia } = require('../src/utils/turnosDeHoy');
+const { hoyEnMadrid, clientesDeHoy, turnosEfectivosHoy, clientesDeTurnos, motivoSinReferencia } = require('../src/utils/turnosDeHoy');
 const { validarUbicacion } = require('../src/utils/validacionUbicacion');
 
 const martes = new Date('2026-11-03T10:00:00Z');
@@ -51,8 +51,9 @@ test('con varios turnos devuelve todos los clientes de hoy', () => {
 const posicion = { lat: 43.36, lng: -5.85, precision: 8 };
 
 function validarDeHoy(turnos) {
-  const resultado = validarUbicacion({ posicion, referencias: clientesDeHoy(turnos, martes) });
-  if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(turnos, martes);
+  const deHoy = turnosEfectivosHoy({ empleadoId: 'e1', turnos: turnos.map(t => ({ empleado: 'e1', ...t })) }, martes);
+  const resultado = validarUbicacion({ posicion, referencias: clientesDeTurnos(deHoy) });
+  if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(deHoy);
   return resultado;
 }
 
