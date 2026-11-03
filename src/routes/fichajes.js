@@ -86,7 +86,9 @@ router.post('/salida', async (req, res) => {
   const ubicacion = ubicacionDelBody(req);
   if (!ubicacion) return res.status(400).json({ error: 'Se necesita tu ubicación para fichar. Activa el permiso de ubicación e inténtalo de nuevo.', error_code: 'UBICACION_REQUERIDA' });
 
-  abierto.salida = { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req) };
+  const validacion = await validacionDe(req.user.empleadoId, ubicacion);
+
+  abierto.salida = { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req), validacion };
   abierto.estado = 'cerrado';
   await abierto.save();
   res.json(abierto);
