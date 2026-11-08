@@ -8,7 +8,7 @@ const { clienteValidoParaMapa, candidatosGeocodificacion, localidadDifiereDeZona
 const CAMPOS_PERMITIDOS = [
   'nif', 'nombre', 'alias', 'sucursal', 'direccion_facturacion', 'direccion_real', 'zona',
   'cp', 'provincia', 'tlf', 'email', 'tipo_cliente',
-  'persona_contacto',
+  'persona_contacto', 'radio_validacion_m',
 ];
 const CAMPOS_ARRAY = ['horas_contratadas'];
 

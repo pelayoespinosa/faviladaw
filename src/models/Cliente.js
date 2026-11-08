@@ -24,6 +24,7 @@ const schema = new mongoose.Schema({
   geocoded_at:    { type: Date, default: null },
   geocode_error:  { type: String, trim: true, default: null },
   geocode_manual: { type: Boolean, default: false },
+  radio_validacion_m: { type: Number, min: 20, max: 1000, default: null },
 }, { timestamps: true });
 
 schema.index({ nif: 1, sucursal: 1 }, { unique: true, sparse: true });
