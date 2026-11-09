@@ -10,13 +10,27 @@ const { generarPDFFichaje } = require('../utils/pdfFichaje');
 
 const dispositivoDe = req => (req.get('user-agent') || '').slice(0, 200);
 
+const numeroFinito = v => (typeof v === 'number' && Number.isFinite(v) ? v : undefined);
+
+function fechaValida(ms) {
+  if (numeroFinito(ms) === undefined) return undefined;
+  const fecha = new Date(ms);
+  return Number.isNaN(fecha.getTime()) ? undefined : fecha;
+}
+
 function ubicacionDelBody(req) {
-  const { lat, lng, precision } = req.body;
+  const { lat, lng, precision, altitud, velocidad, timestamp } = req.body;
   if (typeof lat !== 'number' || typeof lng !== 'number' || !Number.isFinite(lat) || !Number.isFinite(lng)
     || lat < -90 || lat > 90 || lng < -180 || lng > 180) {
     return null;
   }
-  return { lat, lng, precision: typeof precision === 'number' && Number.isFinite(precision) ? precision : undefined };
+  return {
+    lat, lng,
+    precision: numeroFinito(precision),
+    altitud: numeroFinito(altitud),
+    velocidad: numeroFinito(velocidad),
+    timestamp_posicion: fechaValida(timestamp),
+  };
 }
 
 const confirmacionDe = req => ({ dispositivo: dispositivoDe(req), ip: req.ip });

@@ -17,6 +17,9 @@ const puntoSchema = new mongoose.Schema({
   lat:          { type: Number },
   lng:          { type: Number },
   precision:    { type: Number },
+  altitud:      { type: Number },
+  velocidad:    { type: Number },
+  timestamp_posicion: { type: Date },
   confirmacion: { type: confirmacionSchema },
   validacion:   { type: validacionSchema },
 }, { _id: false });
