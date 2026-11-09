@@ -10,9 +10,16 @@ function obtenerUbicacion() {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) return reject(new Error('Este navegador no soporta geolocalización. No se puede fichar desde aquí.'));
     navigator.geolocation.getCurrentPosition(
-      pos => resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude, precision: pos.coords.accuracy }),
+      pos => resolve({
+        lat: pos.coords.latitude,
+        lng: pos.coords.longitude,
+        precision: pos.coords.accuracy,
+        altitud: pos.coords.altitude,
+        velocidad: pos.coords.speed,
+        timestamp: pos.timestamp,
+      }),
       () => reject(new Error('No se pudo obtener tu ubicación. Activa el permiso de ubicación e inténtalo de nuevo.')),
-      { enableHighAccuracy: true, timeout: 10000 }
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
     );
   });
 }
