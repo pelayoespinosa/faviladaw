@@ -6,7 +6,7 @@ import SearchSelect from '../components/SearchSelect';
 
 const TIPOS=['piso','comunidad','nave','oficinas'];
 const TIPOS_ITEMS=TIPOS.map(t=>({_id:t,nombre:t}));
-const empty={nif:'',nombre:'',alias:'',sucursal:'',direccion_facturacion:'',direccion_real:'',zona:'',cp:'',provincia:'',tlf:'',email:'',tipo_cliente:'',persona_contacto:''};
+const empty={nif:'',nombre:'',alias:'',sucursal:'',direccion_facturacion:'',direccion_real:'',zona:'',cp:'',provincia:'',tlf:'',email:'',tipo_cliente:'',persona_contacto:'',radio_validacion_m:''};
 
 export default function GestionClientes(){
   const[clientes,setClientes]=useState([]);
@@ -25,8 +25,10 @@ export default function GestionClientes(){
     if(!form.nif)   return setError('El NIF es obligatorio');
     if(!form.nombre)return setError('El nombre es obligatorio');
     if(sucursalDe&&!form.sucursal.trim())return setError('Indica el nombre de la sucursal');
+    const radio=form.radio_validacion_m===''?null:Number(form.radio_validacion_m);
+    if(radio!==null&&!(radio>=20&&radio<=1000))return setError('El radio de validación debe estar entre 20 y 1000 metros');
     try{
-      const payload={...form,tipo_cliente:form.tipo_cliente||null};
+      const payload={...form,tipo_cliente:form.tipo_cliente||null,radio_validacion_m:radio};
       if(editId)await api.put(`/clientes/${editId}`,payload);
       else      await api.post('/clientes',payload);
       setForm(empty);setEditId(null);setSucursalDe('');setError('');cargar();
@@ -34,12 +36,12 @@ export default function GestionClientes(){
   };
 
   const editar=c=>{
-    setForm({nif:c.nif||'',nombre:c.nombre||'',alias:c.alias||'',sucursal:c.sucursal||'',direccion_facturacion:c.direccion_facturacion||'',direccion_real:c.direccion_real||'',zona:c.zona||'',cp:c.cp||'',provincia:c.provincia||'',tlf:c.tlf||'',email:c.email||'',tipo_cliente:c.tipo_cliente||'',persona_contacto:c.persona_contacto||''});
+    setForm({nif:c.nif||'',nombre:c.nombre||'',alias:c.alias||'',sucursal:c.sucursal||'',direccion_facturacion:c.direccion_facturacion||'',direccion_real:c.direccion_real||'',zona:c.zona||'',cp:c.cp||'',provincia:c.provincia||'',tlf:c.tlf||'',email:c.email||'',tipo_cliente:c.tipo_cliente||'',persona_contacto:c.persona_contacto||'',radio_validacion_m:c.radio_validacion_m??''});
     setEditId(c._id);setSucursalDe('');window.scrollTo(0,0);
   };
 
   const nuevaSucursal=c=>{
-    setForm({nif:c.nif||'',nombre:c.nombre||'',alias:c.alias||'',sucursal:'',direccion_facturacion:c.direccion_facturacion||'',direccion_real:'',zona:c.zona||'',cp:c.cp||'',provincia:c.provincia||'',tlf:c.tlf||'',email:c.email||'',tipo_cliente:c.tipo_cliente||'',persona_contacto:c.persona_contacto||''});
+    setForm({nif:c.nif||'',nombre:c.nombre||'',alias:c.alias||'',sucursal:'',direccion_facturacion:c.direccion_facturacion||'',direccion_real:'',zona:c.zona||'',cp:c.cp||'',provincia:c.provincia||'',tlf:c.tlf||'',email:c.email||'',tipo_cliente:c.tipo_cliente||'',persona_contacto:c.persona_contacto||'',radio_validacion_m:''});
     setEditId(null);setSucursalDe(c.alias||c.nombre);setError('');window.scrollTo(0,0);
   };
 
@@ -50,7 +52,8 @@ export default function GestionClientes(){
     <div className="filter-group" style={{flex:opts.flex||1,minWidth:opts.min||160}}>
       <span className="filter-label">{label}{opts.req&&<span style={{color:'var(--coral)',marginLeft:3}}>*</span>}</span>
       <input className="form-input" value={form[key]} type={opts.type||'text'}
-        onChange={e=>setForm(p=>({...p,[key]:e.target.value}))} placeholder={opts.ph||''}/>
+        onChange={e=>setForm(p=>({...p,[key]:e.target.value}))} placeholder={opts.ph||''}
+        min={opts.vmin} max={opts.vmax} step={opts.step}/>
     </div>
   );
 
@@ -86,6 +89,7 @@ export default function GestionClientes(){
       <div className="form-row-fields" style={{display:'flex',gap:12,flexWrap:'wrap',marginBottom:16}}>
         <SearchSelect label="Tipo de cliente" items={TIPOS_ITEMS} value={form.tipo_cliente}
           onChange={v=>setForm(p=>({...p,tipo_cliente:v}))} placeholder="Buscar tipo…" />
+        {f('radio_validacion_m','Radio de validación (m)',{type:'number',vmin:20,vmax:1000,step:10,min:180,ph:'Por defecto: 150'})}
       </div>
 
       {error&&<div className="error-msg" style={{marginBottom:10}}>{error}</div>}
