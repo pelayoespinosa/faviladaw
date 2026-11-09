@@ -16,6 +16,7 @@ export default function GestionClientes(){
   const[error,setError]=useState('');
   const[busqueda,setBusqueda]=useState('');
   const[filtroTipo,setFiltroTipo]=useState('');
+  const[soloSinCoord,setSoloSinCoord]=useState(false);
   const[loading,setLoading]=useState(true);
 
   const cargar=()=>api.get('/clientes').then(r=>{setClientes(r.data);setLoading(false)});
@@ -57,7 +58,11 @@ export default function GestionClientes(){
     </div>
   );
 
+  const sinCoordenadas=c=>c.lat==null||c.lng==null;
+  const totalSinCoord=clientes.filter(sinCoordenadas).length;
+
   const cliF=clientes.filter(c=>{
+    if(soloSinCoord&&!sinCoordenadas(c))return false;
     if(busqueda){const q=normalizar(busqueda);if(!normalizar(c.nombre).includes(q)&&!normalizar(c.alias).includes(q)&&!normalizar(c.nif).includes(q)&&!normalizar(c.sucursal).includes(q)&&!normalizar(c.direccion_facturacion).includes(q)&&!normalizar(c.direccion_real).includes(q))return false}
     if(filtroTipo&&c.tipo_cliente!==filtroTipo)return false;
     return true;
@@ -111,6 +116,13 @@ export default function GestionClientes(){
           {TIPOS.map(t=><option key={t} value={t}>{t}</option>)}
         </select>
       </div>
+      {totalSinCoord>0&&<div className="filter-group">
+        <span className="filter-label">Ubicación</span>
+        <label style={{display:'flex',alignItems:'center',gap:6,fontSize:13,color:'var(--coral)',cursor:'pointer'}}>
+          <input type="checkbox" checked={soloSinCoord} onChange={e=>setSoloSinCoord(e.target.checked)}/>
+          Solo sin coordenadas ({totalSinCoord})
+        </label>
+      </div>}
       <div className="filters-count">{cliF.length} clientes</div>
     </div>
 
@@ -125,6 +137,8 @@ export default function GestionClientes(){
               <td data-label="Nombre" style={{fontWeight:500,color:'var(--text)'}}>
                 {c.alias||c.nombre}
                 {c.alias&&<div style={{fontSize:11,color:'var(--text-3)',fontWeight:400}}>{c.nombre}</div>}
+                {sinCoordenadas(c)&&<span className="tipo-badge" style={{border:'1px solid var(--coral)',color:'var(--coral)',marginTop:4}}
+                  title="Sin coordenadas: los fichajes en este cliente no se pueden comprobar y quedan como «sin referencia». Localiza su dirección en la pantalla Mapa.">Sin coordenadas</span>}
               </td>
               <td data-label="Sucursal" className="cell-muted" style={{fontSize:12}}>{c.sucursal||'—'}</td>
               <td data-label="NIF"><span className="cell-mono">{c.nif||'—'}</span></td>
