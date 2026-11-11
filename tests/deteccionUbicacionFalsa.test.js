@@ -106,3 +106,60 @@ test('dos señales a la vez dan sospecha alta, con los motivos en orden fijo', (
 test('una sola señal da sospecha baja', () => {
   assert.equal(detectar(punto({ precision: 0 })).nivel, 'baja');
 });
+
+const M_POR_KM_LAT = 111.19493;
+const alNorte = km => 43.36 + km / M_POR_KM_LAT;
+const hace = (minutos, extra = {}) => anterior({ lat: 43.36, lng: -5.85, fecha_hora: new Date(AHORA.getTime() - minutos * 60e3), ...extra });
+const enKm = (km, extra = {}) => punto({ lat: alNorte(km), ...extra });
+
+test('viaje imposible: 100 km en 10 minutos da sospecha alta aunque sea la única señal', () => {
+  const r = detectar(enKm(100), [hace(10)]);
+  assert.deepEqual(r, { nivel: 'alta', motivos: ['viaje_imposible'] });
+});
+
+test('viaje imposible: 25 km en 30 minutos (50 km/h) es un desplazamiento normal', () => {
+  assert.equal(detectar(enKm(25), [hace(30)]).nivel, 'ninguna');
+});
+
+test('viaje imposible: el límite está en 150 km/h', () => {
+  assert.equal(detectar(enKm(70), [hace(30)]).nivel, 'ninguna');
+  assert.equal(detectar(enKm(80), [hace(30)]).nivel, 'alta');
+});
+
+test('viaje imposible: por debajo de 1 km no se evalúa, por rápido que parezca', () => {
+  const casi = hace(0, { fecha_hora: new Date(AHORA.getTime() - 1000) });
+  assert.equal(detectar(enKm(0.5), [casi]).nivel, 'ninguna');
+});
+
+test('viaje imposible: a la distancia se le restan las precisiones de los dos puntos', () => {
+  const previo = hace(0, { fecha_hora: new Date(AHORA.getTime() - 10000), precision: 100 });
+  assert.equal(detectar(enKm(1.2, { precision: 150 }), [previo]).nivel, 'ninguna');
+  assert.equal(detectar(enKm(1.2, { precision: 8 }), [previo]).nivel, 'alta');
+});
+
+test('viaje imposible: dos fichajes lejanos con la misma hora cuentan como imposibles', () => {
+  const mismaHora = hace(0, { fecha_hora: AHORA });
+  assert.deepEqual(detectar(enKm(100), [mismaHora]).motivos, ['viaje_imposible']);
+});
+
+test('viaje imposible: solo se compara con el fichaje inmediatamente anterior', () => {
+  const lejos = hace(120, { lat: alNorte(300) });
+  assert.equal(detectar(enKm(0.1), [hace(10), lejos]).nivel, 'ninguna');
+});
+
+test('viaje imposible: sin fichaje anterior o sin su ubicación no se puede evaluar', () => {
+  assert.equal(detectar(enKm(100), []).nivel, 'ninguna');
+  assert.equal(detectar(enKm(100), [hace(10, { lat: undefined })]).nivel, 'ninguna');
+  assert.equal(detectar(enKm(100), [hace(10, { fecha_hora: undefined })]).nivel, 'ninguna');
+});
+
+test('viaje imposible: se combina con otras señales y sale el primero en los motivos', () => {
+  const r = detectar(enKm(100, { timestamp_posicion: segundos(-300) }), [hace(10)]);
+  assert.equal(r.nivel, 'alta');
+  assert.deepEqual(r.motivos, ['viaje_imposible', 'posicion_antigua']);
+});
+
+test('viaje imposible: un fichaje anterior con hora posterior se trata como simultáneo, no como viaje al pasado', () => {
+  const desordenado = hace(0, { fecha_hora: new Date(AHORA.getTime() + 5 * 60e3) });
+  assert.deepEqual(detectar(enKm(100), [desordenado]).motivos, ['viaje_imposible']);
+});
