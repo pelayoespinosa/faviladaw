@@ -5,11 +5,17 @@ const confirmacionSchema = new mongoose.Schema({
   ip:            { type: String },
 }, { _id: false });
 
+const sospechaSchema = new mongoose.Schema({
+  nivel:   { type: String, enum: ['ninguna', 'baja', 'alta'], required: true },
+  motivos: { type: [String], default: [] },
+}, { _id: false });
+
 const validacionSchema = new mongoose.Schema({
   estado:      { type: String, enum: ['dentro', 'dudoso', 'fuera', 'sin_referencia'], required: true },
   distancia_m: { type: Number },
   radio_m:     { type: Number },
   motivo:      { type: String },
+  sospecha:    { type: sospechaSchema },
 }, { _id: false });
 
 const puntoSchema = new mongoose.Schema({

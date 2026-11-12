@@ -66,8 +66,9 @@ function servidor(t) {
 }
 
 function simular(t, { turnos = [], coberturas = [], coberturasFallan = false }) {
-  const cadena = datos => ({ populate() { return this; }, lean: async () => datos() });
+  const cadena = datos => ({ populate() { return this; }, sort() { return this; }, limit() { return this; }, lean: async () => datos() });
   t.mock.method(Fichaje, 'findOne', async () => null);
+  t.mock.method(Fichaje, 'find', () => cadena(() => []));
   t.mock.method(Fichaje, 'create', async d => d);
   t.mock.method(Cobertura, 'find', () => cadena(() => {
     if (coberturasFallan) throw new Error('mongo caído');

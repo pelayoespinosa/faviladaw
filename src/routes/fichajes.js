@@ -3,6 +3,7 @@ const Fichaje = require('../models/Fichaje');
 const Turno = require('../models/Turno');
 const Cobertura = require('../models/Cobertura');
 const { validarUbicacion } = require('../utils/validacionUbicacion');
+const { deteccionUbicacionFalsa } = require('../utils/deteccionUbicacionFalsa');
 const { hoyEnMadrid, turnosEfectivosHoy, clientesDeTurnos, motivoSinReferencia } = require('../utils/turnosDeHoy');
 const { generarPDFFichajes } = require('../utils/pdfFichajes');
 const { generarXLSXFichajes } = require('../utils/xlsxFichajes');
@@ -37,7 +38,29 @@ const confirmacionDe = req => ({ dispositivo: dispositivoDe(req), ip: req.ip });
 
 const CAMPOS_CLIENTE = 'lat lng radio_validacion_m';
 
-async function validacionDe(empleadoId, ubicacion) {
+async function puntosAnteriores(empleadoId) {
+  const fichajes = await Fichaje.find({
+    empleado: empleadoId,
+    estado: { $ne: 'anulado' },
+    'creado_manualmente.fecha': { $exists: false },
+  }).sort({ 'entrada.fecha_hora': -1 }).limit(3).lean();
+  return fichajes
+    .flatMap(f => [f.salida, f.entrada])
+    .filter(p => p && numeroFinito(p.lat) !== undefined && numeroFinito(p.lng) !== undefined && p.fecha_hora)
+    .sort((a, b) => new Date(b.fecha_hora) - new Date(a.fecha_hora));
+}
+
+async function sospechaDe(empleadoId, ubicacion, fechaHora) {
+  try {
+    const anteriores = await puntosAnteriores(empleadoId);
+    return deteccionUbicacionFalsa({ punto: { ...ubicacion, fecha_hora: fechaHora }, anteriores });
+  } catch (e) {
+    console.error('No se pudo evaluar la sospecha de ubicación falsa:', e.message);
+    return undefined;
+  }
+}
+
+async function validacionDe(empleadoId, ubicacion, fechaHora) {
   try {
     const { fecha } = hoyEnMadrid();
     const coberturas = await Cobertura.find({
@@ -51,6 +74,7 @@ async function validacionDe(empleadoId, ubicacion) {
     const deHoy = turnosEfectivosHoy({ empleadoId, turnos, coberturas });
     const resultado = validarUbicacion({ posicion: ubicacion, referencias: clientesDeTurnos(deHoy) });
     if (resultado.estado === 'sin_referencia') resultado.motivo = motivoSinReferencia(deHoy);
+    resultado.sospecha = await sospechaDe(empleadoId, ubicacion, fechaHora);
     return resultado;
   } catch (e) {
     console.error('No se pudo validar la ubicación del fichaje:', e.message);
@@ -93,12 +117,13 @@ router.post('/entrada', async (req, res) => {
   const ubicacion = ubicacionDelBody(req);
   if (!ubicacion) return res.status(400).json({ error: 'Se necesita tu ubicación para fichar. Activa el permiso de ubicación e inténtalo de nuevo.', error_code: 'UBICACION_REQUERIDA' });
 
-  const validacion = await validacionDe(req.user.empleadoId, ubicacion);
+  const ahora = new Date();
+  const validacion = await validacionDe(req.user.empleadoId, ubicacion, ahora);
 
   try {
     const f = await Fichaje.create({
       empleado: req.user.empleadoId,
-      entrada: { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req), validacion },
+      entrada: { fecha_hora: ahora, ...ubicacion, confirmacion: confirmacionDe(req), validacion },
     });
     res.status(201).json(f);
   } catch (e) { res.status(400).json({ error: e.message }); }
@@ -112,9 +137,10 @@ router.post('/salida', async (req, res) => {
   const ubicacion = ubicacionDelBody(req);
   if (!ubicacion) return res.status(400).json({ error: 'Se necesita tu ubicación para fichar. Activa el permiso de ubicación e inténtalo de nuevo.', error_code: 'UBICACION_REQUERIDA' });
 
-  const validacion = await validacionDe(req.user.empleadoId, ubicacion);
+  const ahora = new Date();
+  const validacion = await validacionDe(req.user.empleadoId, ubicacion, ahora);
 
-  abierto.salida = { fecha_hora: new Date(), ...ubicacion, confirmacion: confirmacionDe(req), validacion };
+  abierto.salida = { fecha_hora: ahora, ...ubicacion, confirmacion: confirmacionDe(req), validacion };
   abierto.estado = 'cerrado';
   await abierto.save();
   res.json(abierto);

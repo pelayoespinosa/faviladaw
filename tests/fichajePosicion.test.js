@@ -9,9 +9,10 @@ const base = { lat: 43.36, lng: -5.85, precision: 8 };
 const completa = { ...base, altitud: 120.5, velocidad: 0, timestamp: Date.UTC(2026, 10, 9, 8, 0, 0) };
 
 function servidor(t, abierto = null) {
-  const cadena = () => ({ populate() { return this; }, lean: async () => [] });
+  const cadena = () => ({ populate() { return this; }, sort() { return this; }, limit() { return this; }, lean: async () => [] });
   const guardados = [];
   t.mock.method(Fichaje, 'findOne', async () => abierto);
+  t.mock.method(Fichaje, 'find', cadena);
   t.mock.method(Fichaje, 'create', async d => { guardados.push(d); return d; });
   t.mock.method(Turno, 'find', cadena);
   t.mock.method(Cobertura, 'find', cadena);
