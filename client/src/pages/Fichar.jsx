@@ -6,6 +6,12 @@ import { useAuth } from '../context/AuthContext';
 const fmtHora = d => d ? new Date(d).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) : '—';
 const fmtFecha = d => d ? new Date(d).toLocaleDateString('es-ES', { weekday: 'long', day: '2-digit', month: 'long' }) : '';
 
+const AVISOS_UBICACION = {
+  dentro: { clase: 'ok', titulo: 'Ubicación confirmada', texto: 'Estás en la zona de tu turno.' },
+  dudoso: { clase: 'warn', titulo: 'No hemos podido confirmar tu ubicación', texto: 'La señal GPS es poco precisa. El fichaje queda registrado y se revisará.' },
+  fuera: { clase: 'warn', titulo: 'Estás fuera de la zona de tu turno', texto: 'El fichaje queda registrado y lo revisará tu encargado.' },
+};
+
 function obtenerUbicacion() {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) return reject(new Error('Este navegador no soporta geolocalización. No se puede fichar desde aquí.'));
@@ -30,6 +36,7 @@ export default function Fichar() {
   const [cargando, setCargando] = useState(false);
   const [pasoActual, setPasoActual] = useState('');
   const [error, setError] = useState('');
+  const [resultado, setResultado] = useState(null);
   const [ahora, setAhora] = useState(() => new Date());
   const [turnos, setTurnos] = useState([]);
 
@@ -57,6 +64,7 @@ export default function Fichar() {
 
   const fichar = async (tipo) => {
     setError('');
+    setResultado(null);
     setCargando(true);
     try {
       setPasoActual('Obteniendo ubicación…');
@@ -70,6 +78,7 @@ export default function Fichar() {
 
       const r = await api.post(`/fichajes/${tipo}`, ubicacion);
       setAbierto(tipo === 'entrada' ? r.data : null);
+      setResultado(AVISOS_UBICACION[r.data?.[tipo]?.validacion?.estado] || null);
     } catch (e) {
       setError(e.response?.data?.error || e.message || 'Error al fichar');
     } finally {
@@ -121,6 +130,13 @@ export default function Fichar() {
               {!cargando && proximo && !abierto && <small>{proximo}</small>}
             </span>
           </button>
+
+          {resultado && !error && (
+            <div className={`fichar-aviso ${resultado.clase}`} role="status">
+              <b>{resultado.titulo}</b>
+              <div style={{ marginTop: 4 }}>{resultado.texto}</div>
+            </div>
+          )}
 
           {error && (
             <div className="fichar-aviso crit" role="alert">
