@@ -4,10 +4,22 @@ import FichajeMapaModal from '../components/FichajeMapaModal';
 import SearchSelect from '../components/SearchSelect';
 import { calcHMesProrr, calcHSemProrr } from '../constants/tareas';
 import { useAuth } from '../context/AuthContext';
+import { incidenciaDe, coincideConFiltro, MOTIVOS_SOSPECHA } from '../utils/ubicacionFichaje';
 
 const UMBRAL_AVISO = 0.9;
 
 const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+const FILTROS_UBICACION = [
+  ['todos', 'Todos los fichajes'],
+  ['incidencias', 'Con incidencias de ubicación'],
+  ['fuera', 'Fuera de zona'],
+  ['sospechosos', 'Sospecha de ubicación falsa'],
+];
+const ETIQUETA_ZONA = {
+  dentro: ['En zona', 'firmado'], dudoso: ['Sin confirmar', 'dudoso'], fuera: ['Fuera de zona', 'pendiente'],
+};
+const ETIQUETA_SOSPECHA = { baja: ['Sospecha baja', 'dudoso'], alta: ['Sospecha alta', 'pendiente'] };
+
 const DIAS_LABEL = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
 
 const pad = n => String(n).padStart(2, '0');
@@ -36,6 +48,30 @@ async function descargar(url, params, filename) {
   URL.revokeObjectURL(blobUrl);
 }
 
+function IncidenciaUbicacion({ fichaje }) {
+  const i = incidenciaDe(fichaje);
+  if (!i.zona || (i.zona === 'sin_referencia' && i.sospecha === 'ninguna')) return null;
+  const zona = ETIQUETA_ZONA[i.zona];
+  const sospecha = ETIQUETA_SOSPECHA[i.sospecha];
+  const detalle = [fichaje.entrada?.validacion && ['Entrada', fichaje.entrada.validacion], fichaje.salida?.validacion && ['Salida', fichaje.salida.validacion]]
+    .filter(Boolean)
+    .filter(([, v]) => v.distancia_m != null)
+    .map(([n, v]) => `${n}: a ${Math.round(v.distancia_m)} m (radio ${Math.round(v.radio_m)} m)`)
+    .join(' · ');
+  return (
+    <div style={{ marginTop: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
+      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+        {zona && <span className={`badge-firma-estado ${zona[1]}`}>{zona[0]}</span>}
+        {sospecha && <span className={`badge-firma-estado ${sospecha[1]}`}>{sospecha[0]}</span>}
+      </div>
+      {detalle && <div style={{ fontSize: 11, color: 'var(--text-3)' }}>{detalle}</div>}
+      {i.motivos.length > 0 && (
+        <div style={{ fontSize: 11, color: 'var(--text-2)' }}>{i.motivos.map(m => MOTIVOS_SOSPECHA[m] || m).join(' · ')}</div>
+      )}
+    </div>
+  );
+}
+
 export default function Fichajes() {
   const { esAdmin, esEncargado, esGestoria } = useAuth();
   const puedeGestionarJornada = esAdmin || esEncargado;
@@ -50,6 +86,7 @@ export default function Fichajes() {
   const [editandoId, setEditandoId] = useState(null);
   const [editForm, setEditForm] = useState({ entrada: '', salida: '', motivo: '' });
   const [editError, setEditError] = useState('');
+  const [filtroUbicacion, setFiltroUbicacion] = useState('todos');
 
   const [turnos, setTurnos] = useState([]);
   const [fichajesAnio, setFichajesAnio] = useState([]);
@@ -82,12 +119,12 @@ export default function Fichajes() {
 
   const porDia = useMemo(() => {
     const map = {};
-    fichajes.forEach(f => {
+    fichajes.filter(f => coincideConFiltro(f, filtroUbicacion)).forEach(f => {
       const k = claveDia(new Date(f.entrada.fecha_hora));
       (map[k] ||= []).push(f);
     });
     return map;
-  }, [fichajes]);
+  }, [fichajes, filtroUbicacion]);
 
   const sinSalida = useMemo(() => fichajesAnio
     .filter(f => f.estado === 'abierto' && claveDia(new Date(f.entrada.fecha_hora)) < claveDia(new Date()))
@@ -236,6 +273,12 @@ export default function Fichajes() {
             <button className="btn-cancel" onClick={() => cambiarMes(1)}>›</button>
           </div>
         </div>
+        <div className="filter-group">
+          <div className="filter-label">Ubicación</div>
+          <select className="filter-select" value={filtroUbicacion} onChange={e => setFiltroUbicacion(e.target.value)}>
+            {FILTROS_UBICACION.map(([v, t]) => <option key={v} value={v}>{t}</option>)}
+          </select>
+        </div>
         {(esAdmin || esGestoria) && (
           <div style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
             {esAdmin && <button className="btn-save" onClick={abrirModalManual}>+ Añadir fichaje olvidado</button>}
@@ -292,7 +335,10 @@ export default function Fichajes() {
                       display: 'flex', flexDirection: 'column', gap: 4, fontFamily: 'var(--f-ui)',
                     }}
                   >
-                    <span style={{ fontSize: 12, color: 'var(--text-2)', display: 'flex', justifyContent: 'space-between', width: '100%' }}>{d.getDate()}{lista.some(f => f.estado === 'abierto' && claveDia(d) < claveDia(hoy)) && <span title="Fichaje sin salida" style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--coral)', marginTop: 3 }} />}</span>
+                    <span style={{ fontSize: 12, color: 'var(--text-2)', display: 'flex', justifyContent: 'space-between', width: '100%' }}>{d.getDate()}<span style={{ display: 'flex', gap: 4 }}>
+                      {lista.some(f => incidenciaDe(f).hay) && <span title="Incidencia de ubicación" style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--amber)', marginTop: 3 }} />}
+                      {lista.some(f => f.estado === 'abierto' && claveDia(d) < claveDia(hoy)) && <span title="Fichaje sin salida" style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--coral)', marginTop: 3 }} />}
+                    </span></span>
                     {lista.length > 0 && (
                       empleadoFiltro
                         ? <span style={{ fontSize: 11, color: 'var(--text)' }}>{fmtHora(lista[0].entrada.fecha_hora)}–{fmtHora(lista[0].salida?.fecha_hora)}</span>
@@ -357,6 +403,7 @@ export default function Fichajes() {
                           {f.estado === 'abierto' ? <span style={{ color: 'var(--coral)' }}>abierto</span> : <>{fmtHora(f.salida?.fecha_hora)}</>}
                           {f.estado !== 'anulado' && f.duracion_horas != null && <span className="badge-hours" style={{ marginLeft: 8 }}>{f.duracion_horas}h</span>}
                         </div>
+                        <IncidenciaUbicacion fichaje={f} />
                         {f.estado === 'anulado' && f.anulacion?.motivo && (
                           <div style={{ fontSize: 11.5, color: 'var(--text-3)', marginTop: 2 }}>Motivo: {f.anulacion.motivo}</div>
                         )}
