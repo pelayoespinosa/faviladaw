@@ -4,6 +4,29 @@ import api from '../api/axios';
 const fmtFecha = d => new Date(d).toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
 const fmtHora  = d => d ? new Date(d).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) : '—';
 
+const ESTADOS = {
+  dentro: { texto: 'En zona', clase: 'firmado', gravedad: 1 },
+  dudoso: { texto: 'Sin confirmar', clase: 'dudoso', gravedad: 2 },
+  fuera: { texto: 'Fuera de zona', clase: 'pendiente', gravedad: 3 },
+  sin_referencia: { texto: 'Sin referencia', clase: 'neutro', gravedad: 0 },
+};
+
+const detalleUbicacion = (nombre, v) => {
+  if (!v) return null;
+  const e = ESTADOS[v.estado];
+  const distancia = v.distancia_m != null ? ` (a ${Math.round(v.distancia_m)} m, radio ${Math.round(v.radio_m)} m)` : '';
+  return `${nombre}: ${e ? e.texto.toLowerCase() : v.estado}${distancia}`;
+};
+
+function UbicacionFichaje({ f }) {
+  const puntos = [f.entrada?.validacion, f.salida?.validacion].filter(Boolean);
+  if (puntos.length === 0) return <span style={{ color: 'var(--text-3)' }}>—</span>;
+  const peor = puntos.reduce((a, b) => ((ESTADOS[b.estado]?.gravedad ?? 0) > (ESTADOS[a.estado]?.gravedad ?? 0) ? b : a));
+  const e = ESTADOS[peor.estado] || ESTADOS.sin_referencia;
+  const titulo = [detalleUbicacion('Entrada', f.entrada?.validacion), detalleUbicacion('Salida', f.salida?.validacion)].filter(Boolean).join('\n');
+  return <span className={`badge-firma-estado ${e.clase}`} title={titulo} style={{ cursor: 'help' }}>{e.texto}</span>;
+}
+
 export default function MisFichajes() {
   const [fichajes, setFichajes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -36,11 +59,11 @@ export default function MisFichajes() {
     )}
     <div className="table-wrap">
       <table className="data-table">
-        <thead><tr>{['Fecha', 'Entrada', 'Salida', 'Horas'].map(h => <th key={h}>{h}</th>)}</tr></thead>
+        <thead><tr>{['Fecha', 'Entrada', 'Salida', 'Ubicación', 'Horas'].map(h => <th key={h}>{h}</th>)}</tr></thead>
         <tbody>
-          {loading && <tr className="loading-row"><td colSpan={4}><div className="spinner" /><div>Cargando…</div></td></tr>}
+          {loading && <tr className="loading-row"><td colSpan={5}><div className="spinner" /><div>Cargando…</div></td></tr>}
           {!loading && fichajes.length === 0 && (
-            <tr><td colSpan={4}><div className="empty-state"><div className="empty-state-icon">🕒</div><div className="empty-state-text">Todavía no tienes fichajes</div></div></td></tr>
+            <tr><td colSpan={5}><div className="empty-state"><div className="empty-state-icon">🕒</div><div className="empty-state-text">Todavía no tienes fichajes</div></div></td></tr>
           )}
           {!loading && fichajes.map(f => (
             <tr key={f._id} className="row-parent" style={{ cursor: 'default' }}>
@@ -51,6 +74,7 @@ export default function MisFichajes() {
                   ? <span className="badge-firma-estado pendiente">Abierto</span>
                   : <>{fmtHora(f.salida?.fecha_hora)}</>}
               </td>
+              <td data-label="Ubicación"><UbicacionFichaje f={f} /></td>
               <td data-label="Horas">
                 {f.duracion_horas != null ? <span className="badge-hours">{f.duracion_horas}h</span> : <span style={{ color: 'var(--text-3)' }}>—</span>}
                 {f.creado_manualmente && (
