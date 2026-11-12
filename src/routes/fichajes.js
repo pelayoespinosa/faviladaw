@@ -222,6 +222,23 @@ router.put('/:id/anular', async (req, res) => {
   res.json(await populate(Fichaje.findById(f._id)));
 });
 
+const tieneIncidencia = f => [f.entrada, f.salida].some(p => p?.validacion
+  && (['fuera', 'dudoso'].includes(p.validacion.estado) || ['baja', 'alta'].includes(p.validacion.sospecha?.nivel)));
+
+router.put('/:id/justificar', async (req, res) => {
+  if (!['admin', 'encargado'].includes(req.user.rol)) return res.status(403).json({ error: 'Sin permisos' });
+  const motivo = String(req.body.motivo || '').trim();
+  if (!motivo) return res.status(400).json({ error: 'Indica el motivo de la justificación (queda registrado)' });
+  const f = await Fichaje.findById(req.params.id);
+  if (!f) return res.status(404).json({ error: 'No encontrado' });
+  if (f.estado === 'anulado') return res.status(400).json({ error: 'No se puede justificar un fichaje anulado' });
+  if (!tieneIncidencia(f)) return res.status(400).json({ error: 'Este fichaje no tiene incidencias de ubicación que justificar' });
+  if (f.justificacion?.fecha) return res.status(400).json({ error: 'Este fichaje ya está justificado' });
+  f.justificacion = { fecha: new Date(), usuario: req.user.id, motivo };
+  await f.save();
+  res.json(f);
+});
+
 router.delete('/:id', (_req, res) => {
   res.status(405).json({ error: 'Los fichajes no se pueden borrar (deben conservarse 4 años). Usa "Anular" indicando el motivo.' });
 });

@@ -49,6 +49,11 @@ const schema = new mongoose.Schema({
     usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario' },
     motivo:  { type: String },
   },
+  justificacion: {
+    fecha:   { type: Date },
+    usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario' },
+    motivo:  { type: String },
+  },
   creado_manualmente: {
     fecha:   { type: Date },
     usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario' },
