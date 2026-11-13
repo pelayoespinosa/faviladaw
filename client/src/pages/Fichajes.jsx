@@ -68,6 +68,11 @@ function IncidenciaUbicacion({ fichaje }) {
       {i.motivos.length > 0 && (
         <div style={{ fontSize: 11, color: 'var(--text-2)' }}>{i.motivos.map(m => MOTIVOS_SOSPECHA[m] || m).join(' · ')}</div>
       )}
+      {fichaje.justificacion?.motivo && (
+        <div style={{ fontSize: 11.5, color: 'var(--accent-ink)' }}>
+          ✓ Justificado el {new Date(fichaje.justificacion.fecha).toLocaleDateString('es-ES')} — {fichaje.justificacion.motivo}
+        </div>
+      )}
     </div>
   );
 }
@@ -192,6 +197,16 @@ export default function Fichajes() {
       await api.put(`/fichajes/${f._id}/anular`, { motivo: motivo.trim() });
       cargar();
     } catch (e) { alert(e.response?.data?.error || 'Error al anular'); }
+  };
+
+  const justificar = async (f) => {
+    const motivo = window.prompt(`Justificar la incidencia de ubicación del fichaje de ${f.empleado?.nombre_display || 'este empleado'}.\n\nEl fichaje no se modifica: la incidencia seguirá constando y se añadirá tu justificación.\n\nMotivo (obligatorio):`);
+    if (motivo === null) return;
+    if (!motivo.trim()) { alert('Debes indicar un motivo.'); return; }
+    try {
+      await api.put(`/fichajes/${f._id}/justificar`, { motivo: motivo.trim() });
+      cargar();
+    } catch (e) { alert(e.response?.data?.error || 'Error al justificar'); }
   };
 
   const abrirModalManual = () => {
@@ -416,6 +431,7 @@ export default function Fichajes() {
                       </div>
                       <div style={{ display: 'flex', gap: 6 }}>
                         <button className="btn-edit" onClick={() => setMapaFichaje(f)}>📍 Mapa</button>
+                        {puedeGestionarJornada && incidenciaDe(f).hay && !f.justificacion && <button className="btn-edit" onClick={() => justificar(f)}>Justificar</button>}
                         <button className="btn-edit" onClick={() => descargar(`/fichajes/${f._id}/pdf`, undefined, `fichaje-${f.empleado?.nombre_completo || f.empleado?.nombre || 'empleado'}-${claveDia(new Date(f.entrada.fecha_hora))}.pdf`)}>⬇ Descargar</button>
                         {esAdmin && f.estado !== 'anulado' && <button className="btn-edit" onClick={() => { setEditandoId(f._id); setEditError(''); setEditForm({ entrada: toDatetimeLocal(f.entrada.fecha_hora), salida: toDatetimeLocal(f.salida?.fecha_hora), motivo: '' }); }}>Editar</button>}
                         {esAdmin && f.estado !== 'anulado' && <button className="btn-delete" onClick={() => anular(f)}>Anular</button>}
