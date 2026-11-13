@@ -82,6 +82,16 @@ async function validacionDe(empleadoId, ubicacion, fechaHora) {
   }
 }
 
+const ROLES_QUE_VEN_SOSPECHA = ['admin', 'encargado', 'gestoria'];
+
+function paraRol(fichaje, rol) {
+  if (!fichaje || ROLES_QUE_VEN_SOSPECHA.includes(rol)) return fichaje;
+  const copia = JSON.parse(JSON.stringify(fichaje));
+  const puntos = [copia.entrada, copia.salida, ...(copia.modificaciones || []).flatMap(m => [m.entrada_anterior, m.salida_anterior])];
+  puntos.forEach(p => { if (p?.validacion) delete p.validacion.sospecha; });
+  return copia;
+}
+
 const populate = q => q.populate('empleado', 'nombre apellidos dni nass');
 
 function rangoQuery(req) {
@@ -106,7 +116,7 @@ function rangoQuery(req) {
 router.get('/estado', async (req, res) => {
   if (!req.user.empleadoId) return res.json(null);
   const abierto = await Fichaje.findOne({ empleado: req.user.empleadoId, estado: 'abierto' });
-  res.json(abierto);
+  res.json(paraRol(abierto, req.user.rol));
 });
 
 router.post('/entrada', async (req, res) => {
@@ -125,7 +135,7 @@ router.post('/entrada', async (req, res) => {
       empleado: req.user.empleadoId,
       entrada: { fecha_hora: ahora, ...ubicacion, confirmacion: confirmacionDe(req), validacion },
     });
-    res.status(201).json(f);
+    res.status(201).json(paraRol(f, req.user.rol));
   } catch (e) { res.status(400).json({ error: e.message }); }
 });
 
@@ -143,13 +153,14 @@ router.post('/salida', async (req, res) => {
   abierto.salida = { fecha_hora: ahora, ...ubicacion, confirmacion: confirmacionDe(req), validacion };
   abierto.estado = 'cerrado';
   await abierto.save();
-  res.json(abierto);
+  res.json(paraRol(abierto, req.user.rol));
 });
 
 router.get('/', async (req, res) => {
   const query = rangoQuery(req);
   if (query === null) return res.json([]);
-  res.json(await populate(Fichaje.find(query)).sort({ 'entrada.fecha_hora': -1 }));
+  const fichajes = await populate(Fichaje.find(query)).sort({ 'entrada.fecha_hora': -1 });
+  res.json(fichajes.map(f => paraRol(f, req.user.rol)));
 });
 
 router.post('/manual', async (req, res) => {
