@@ -10,6 +10,7 @@ import { normalizar } from '../utils/texto';
 import { mapaEstadoHoy, ESTADO_COLOR, ESTADO_LABEL } from '../utils/ausenciasEstado';
 import { agruparCoberturasPorTurno } from '../utils/coberturas';
 import { useSearchParams } from 'react-router-dom';
+import { resumenUbicacion } from '../utils/ubicacionFichaje';
 
 function EstadoAusenciaBadge({ estado }) {
   if (!estado) return null;
@@ -69,6 +70,40 @@ function TurnoRow({turno, coberturaHoy, coberturaDe}){
   );
 }
 
+const pad2=n=>String(n).padStart(2,'0');
+
+function ResumenUbicacionMes({empleadoId}){
+  const[resumen,setResumen]=useState(null);
+  const[error,setError]=useState(false);
+  const ahora=new Date();
+  const desde=`${ahora.getFullYear()}-${pad2(ahora.getMonth()+1)}-01`;
+  const hasta=`${ahora.getFullYear()}-${pad2(ahora.getMonth()+1)}-${pad2(new Date(ahora.getFullYear(),ahora.getMonth()+1,0).getDate())}`;
+  useEffect(()=>{
+    api.get('/fichajes',{params:{empleado:empleadoId,desde,hasta}})
+      .then(r=>setResumen(resumenUbicacion(r.data)))
+      .catch(()=>setError(true));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[empleadoId]);
+  const mes=ahora.toLocaleDateString('es-ES',{month:'long',year:'numeric'});
+  const dato=(valor,texto,color)=><span key={texto} style={{display:'inline-flex',gap:5,alignItems:'baseline',marginRight:16}}><b className="num" style={{color:valor?color:'var(--text-3)'}}>{valor}</b><span style={{color:'var(--text-2)'}}>{texto}</span></span>;
+  return(
+    <tr className="row-child"><td colSpan={8} style={{padding:'12px 16px 12px 44px',fontSize:13}}>
+      <div style={{fontSize:12,fontWeight:700,color:'var(--text-2)',marginBottom:6}}>Ubicación de los fichajes · {mes}</div>
+      {error&&<span style={{color:'var(--text-3)'}}>No se pudo cargar el resumen.</span>}
+      {!error&&!resumen&&<span style={{color:'var(--text-3)'}}>Cargando…</span>}
+      {resumen&&resumen.total===0&&<span style={{color:'var(--text-3)'}}>Sin fichajes este mes.</span>}
+      {resumen&&resumen.total>0&&<div style={{display:'flex',flexWrap:'wrap',rowGap:4}}>
+        {dato(resumen.total,'fichajes','var(--text)')}
+        {dato(resumen.dentro,'en zona','var(--accent)')}
+        {dato(resumen.dudoso,'sin confirmar','var(--amber)')}
+        {dato(resumen.fuera,'fuera de zona','var(--coral)')}
+        {dato(resumen.sospechosos,'con sospecha','var(--coral)')}
+        {dato(resumen.justificados,'justificados','var(--text-2)')}
+      </div>}
+    </td></tr>
+  );
+}
+
 function EmpleadoRow({empleado,turnos,estado,coberturasHoyPorTurno,coberturasQueCubroHoy}){
   const[open,setOpen]=useState(false);
   const totalHSem=turnos.reduce((acc,t)=>acc+calcHSemProrr(t),0);
@@ -97,6 +132,7 @@ function EmpleadoRow({empleado,turnos,estado,coberturasHoyPorTurno,coberturasQue
         <button onClick={descargarPDF} style={{padding:'5px 10px',background:'var(--coral-lt)',color:'var(--coral)',border:'none',borderRadius:6,cursor:'pointer',fontSize:12,fontFamily: 'var(--f-ui)',whiteSpace:'nowrap'}}>⬇ PDF</button>
       </td>
     </tr>
+    {open&&<ResumenUbicacionMes empleadoId={empleado._id}/>}
     {open&&<tr className="row-subhead">
       <td style={{paddingLeft:44}}>Cliente</td>
       <td>Zona</td>

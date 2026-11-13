@@ -75,3 +75,34 @@ test('los motivos tienen una descripción legible', async () => {
     assert.ok(MOTIVOS_SOSPECHA[m], m);
   }
 });
+
+test('resumen del mes: cuenta cada fichaje una vez según su peor zona', async () => {
+  const { resumenUbicacion } = await cargar();
+  const lista = [
+    fichaje(punto('dentro'), punto('dentro')),
+    fichaje(punto('dentro'), punto('fuera')),
+    fichaje(punto('dudoso')),
+    fichaje(punto('sin_referencia')),
+    fichaje({ lat: 1, lng: 1 }),
+  ];
+  assert.deepEqual(resumenUbicacion(lista), { total: 5, dentro: 1, dudoso: 1, fuera: 1, sin_referencia: 1, sin_validar: 1, sospechosos: 0, justificados: 0 });
+});
+
+test('resumen del mes: cuenta sospechosos y justificados, e ignora los anulados', async () => {
+  const { resumenUbicacion } = await cargar();
+  const lista = [
+    fichaje(punto('dentro', { nivel: 'alta', motivos: ['viaje_imposible'] })),
+    fichaje(punto('fuera'), undefined, { justificacion: { motivo: 'cubría' } }),
+    fichaje(punto('fuera'), undefined, { estado: 'anulado' }),
+  ];
+  const r = resumenUbicacion(lista);
+  assert.equal(r.total, 2);
+  assert.equal(r.sospechosos, 1);
+  assert.equal(r.justificados, 1);
+  assert.equal(r.fuera, 1);
+});
+
+test('resumen del mes: sin fichajes todo es cero', async () => {
+  const { resumenUbicacion } = await cargar();
+  assert.deepEqual(resumenUbicacion([]), { total: 0, dentro: 0, dudoso: 0, fuera: 0, sin_referencia: 0, sin_validar: 0, sospechosos: 0, justificados: 0 });
+});

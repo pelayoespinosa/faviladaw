@@ -29,3 +29,15 @@ export function coincideConFiltro(fichaje, filtro) {
   if (filtro === 'sospechosos') return fichaje.estado !== 'anulado' && i.sospecha !== 'ninguna';
   return true;
 }
+
+export function resumenUbicacion(fichajes) {
+  const r = { total: 0, dentro: 0, dudoso: 0, fuera: 0, sin_referencia: 0, sin_validar: 0, sospechosos: 0, justificados: 0 };
+  for (const f of fichajes.filter(x => x.estado !== 'anulado')) {
+    const i = incidenciaDe(f);
+    r.total++;
+    r[i.zona || 'sin_validar']++;
+    if (i.sospecha !== 'ninguna') r.sospechosos++;
+    if (f.justificacion) r.justificados++;
+  }
+  return r;
+}
