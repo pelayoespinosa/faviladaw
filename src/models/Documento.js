@@ -7,6 +7,7 @@ const confirmacionSchema = new Schema({
   fecha_recibido: { type: Date },
   conforme:       { type: Boolean, default: false },
   fecha_conforme: { type: Date },
+  huella_sha256:  { type: String },
 }, { _id: false });
 
 const documentoSchema = new Schema({
@@ -15,6 +16,7 @@ const documentoSchema = new Schema({
   carpeta:                 { type: String, default: 'General' },
   nombre_archivo_original: { type: String, required: true },
   nombre_archivo_storage:  { type: String, required: true },
+  huella_sha256:           { type: String },
   tipo_destinatario:       { type: String, enum: ['todos', 'grupo', 'especifico'], default: 'todos' },
   grupo:                   { type: String },
   requiere_confirmacion:   { type: Boolean, default: true },

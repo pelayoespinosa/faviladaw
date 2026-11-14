@@ -8,6 +8,7 @@ const Carpeta    = require('../models/Carpeta');
 const Turno      = require('../models/Turno');
 const Fichaje    = require('../models/Fichaje');
 const { calcHMesProrr } = require('../utils/prorrateo');
+const { huellaSha256 } = require('../utils/huella');
 
 const router = express.Router();
 
@@ -125,6 +126,7 @@ router.post('/', (req, res, next) => {
     }
 
     const confirmacionesInit = empleadosIds.map(eid => ({ empleado: eid }));
+    const huella = await huellaSha256(req.file.path);
 
     const doc = await Documento.create({
       titulo,
@@ -132,6 +134,7 @@ router.post('/', (req, res, next) => {
       carpeta: carpeta || 'General',
       nombre_archivo_original: req.file.originalname,
       nombre_archivo_storage:  req.file.filename,
+      huella_sha256: huella,
       tipo_destinatario,
       grupo: grupo || undefined,
       requiere_confirmacion: requiere_confirmacion === 'true' || requiere_confirmacion === true,
@@ -203,6 +206,14 @@ router.post('/:id/confirmar', async (req, res) => {
       return res.status(400).json({ error: 'Ya confirmaste este documento' });
     }
 
+    const filePath = path.join(uploadDir, doc.nombre_archivo_storage);
+    if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'Archivo no encontrado: no se puede confirmar' });
+    const huella = await huellaSha256(filePath);
+    if (doc.huella_sha256 && doc.huella_sha256 !== huella) {
+      return res.status(409).json({ error: 'El documento ha cambiado desde que se subió. Avisa a administración antes de confirmar.' });
+    }
+
+    doc.confirmaciones[idx].huella_sha256 = huella;
     doc.confirmaciones[idx].recibido      = true;
     doc.confirmaciones[idx].fecha_recibido = new Date();
     doc.confirmaciones[idx].conforme      = true;
