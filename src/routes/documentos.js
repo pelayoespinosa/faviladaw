@@ -9,6 +9,9 @@ const Turno      = require('../models/Turno');
 const Fichaje    = require('../models/Fichaje');
 const { calcHMesProrr } = require('../utils/prorrateo');
 const { huellaSha256 } = require('../utils/huella');
+const { datosJustificante, confirmado } = require('../utils/registroConfirmaciones');
+const { generarPDFJustificante } = require('../utils/pdfJustificanteLectura');
+const { generarXLSXConfirmaciones } = require('../utils/xlsxConfirmaciones');
 
 const router = express.Router();
 
@@ -221,6 +224,39 @@ router.post('/:id/confirmar', async (req, res) => {
     await doc.save();
 
     res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+const ROLES_REVISION = ['admin', 'encargado', 'gestoria'];
+const CAMPOS_EMPLEADO = 'nombre apellidos dni';
+
+router.get('/:id/justificante', async (req, res) => {
+  try {
+    const { rol, empleadoId } = req.user;
+    const revisor = ROLES_REVISION.includes(rol);
+    const objetivo = String(req.query.empleado || empleadoId || '');
+    if (!revisor && objetivo !== String(empleadoId)) return res.status(403).json({ error: 'Sin acceso' });
+
+    const doc = await Documento.findById(req.params.id).populate('confirmaciones.empleado', CAMPOS_EMPLEADO);
+    if (!doc) return res.status(404).json({ error: 'No encontrado' });
+    const c = doc.confirmaciones.find(x => String(x.empleado?._id || x.empleado) === objetivo);
+    if (!c) return res.status(404).json({ error: 'Ese empleado no es destinatario del documento' });
+    if (!confirmado(c)) return res.status(400).json({ error: 'El empleado todavía no ha confirmado este documento' });
+
+    generarPDFJustificante(res, datosJustificante(doc, c));
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+router.get('/:id/confirmaciones/export', async (req, res) => {
+  if (!ROLES_REVISION.includes(req.user.rol)) return res.status(403).json({ error: 'Sin permiso' });
+  try {
+    const doc = await Documento.findById(req.params.id).populate('confirmaciones.empleado', CAMPOS_EMPLEADO);
+    if (!doc) return res.status(404).json({ error: 'No encontrado' });
+    await generarXLSXConfirmaciones(res, doc);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }

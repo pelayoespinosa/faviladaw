@@ -42,6 +42,17 @@ export default function MisDocumentos() {
     setPdfCargando(false);
   };
 
+  const descargarJustificante = async (doc) => {
+    try {
+      const r = await api.get(`/documentos/${doc._id}/justificante`, { responseType: 'blob' });
+      const url = URL.createObjectURL(r.data);
+      const a = document.createElement('a');
+      a.href = url; a.download = `justificante-${doc.titulo}.pdf`;
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    } catch { setMsg('No se pudo descargar el justificante.'); }
+  };
+
   const cerrarModal = () => {
     if (modal?.pdfUrl) URL.revokeObjectURL(modal.pdfUrl);
     setModal(null);
@@ -177,6 +188,7 @@ export default function MisDocumentos() {
                 <div style={{ color: 'var(--accent)', fontWeight: 600, fontSize: 15 }}>
                   ✓ Recibido y conforme el {fmt(modal.doc.mi_confirmacion.fecha_conforme)}
                 </div>
+                <button type="button" className="btn-edit" style={{ marginTop: 10 }} onClick={() => descargarJustificante(modal.doc)}>⬇ Descargar justificante</button>
               </div>
             )}
           </div>

@@ -134,6 +134,17 @@ export default function Documentos() {
     setPdfCargando(false);
   };
 
+  const descargarArchivo = async (ruta, nombre, params) => {
+    try {
+      const r = await api.get(ruta, { responseType: 'blob', params });
+      const url = URL.createObjectURL(r.data);
+      const a = document.createElement('a');
+      a.href = url; a.download = nombre;
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    } catch { alert('No se pudo descargar el archivo'); }
+  };
+
   const cerrarPdf = () => {
     if (pdfModal?.pdfUrl) URL.revokeObjectURL(pdfModal.pdfUrl);
     setPdfModal(null);
@@ -395,7 +406,10 @@ export default function Documentos() {
                       : 'Sin confirmación requerida'}
                   </div>
                 </div>
-                <button className="modal-close" onClick={() => { setDetalle(null); setBusqConfirmacion(''); setFiltroConfirmacion('todos'); }}>✕</button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  {detalle.requiere_confirmacion && <button className="btn-edit" onClick={() => descargarArchivo(`/documentos/${detalle._id}/confirmaciones/export`, `confirmaciones-${detalle.titulo}.xlsx`)}>⬇ Excel</button>}
+                  <button className="modal-close" onClick={() => { setDetalle(null); setBusqConfirmacion(''); setFiltroConfirmacion('todos'); }}>✕</button>
+                </div>
               </div>
 
               {detalle.requiere_confirmacion && (
@@ -443,6 +457,9 @@ export default function Documentos() {
                           {f.conforme ? `Conforme el ${fmt(f.fecha_conforme)}` : 'Conforme: pendiente'}
                         </div>
                       </div>
+                      {confirmado && f.empleado?._id && (
+                        <button className="btn-edit" onClick={() => descargarArchivo(`/documentos/${detalle._id}/justificante`, `justificante-${f.empleado?.nombre_display || 'empleado'}.pdf`, { empleado: f.empleado._id })}>Justificante</button>
+                      )}
                     </div>
                   );
                 })}
