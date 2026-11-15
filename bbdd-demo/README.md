@@ -12,7 +12,7 @@ Las fechas de turnos, fichajes y coberturas son relativas al día en que se gene
 | `furgonetas.json` | 3 furgonetas con su conductor |
 | `ausencias.json` | vacaciones (verano, Semana Santa, Navidad, puentes…) y bajas (terminadas y en curso) de 2026 |
 | `coberturas.json` | sustituciones de las ausencias (algunas quedan «sin cubrir» a propósito) |
-| `fichajes.json` | unas 7 semanas de fichajes con ubicación, incluidos los de quien sustituye, alguno añadido a mano, corregido o anulado |
+| `fichajes.json` | unas 7 semanas de fichajes con ubicación, incluidos los de quien sustituye, alguno añadido a mano, corregido o anulado. Cada punto lleva su validación de ubicación (`dentro`, `dudoso`, `fuera` o `sin_referencia`) y, en 10 casos de ejemplo, un fichaje sin confirmar, fuera de zona (uno justificado) o con sospecha de ubicación falsa (`anadir-validacion.js`) |
 | `cuadros_laborales.json` | cuadros de enero a septiembre de 2026 (sin y con variaciones), generados con la propia lógica de la aplicación y con observaciones de vacaciones/bajas y pluses |
 | `precios_servicio.json` | precio por hora de los 15 servicios (limpieza, cristales, abrillantado, mecanizada…). Con ellos y las horas de los turnos, la aplicación calcula sola la facturación mensual de cada cliente |
 | `documentos.json`, `carpetas.json`, `documentos/` | 6 documentos de prueba con PDF (términos y condiciones, protección de datos, prevención de riesgos, normas de furgonetas, calendario laboral, guía para fichar), con quién los ha confirmado ya |
@@ -36,7 +36,7 @@ node bbdd-demo/importar.js        # carga los JSON en la base del .env (borra es
 node bbdd-demo/generar-todo.js    # regenera todos los JSON (necesita MongoDB en marcha)
 ```
 
-`generar-todo.js` ejecuta en orden `generar.js` (empleados, cuentas, clientes), `generar-operativa.js` (turnos, ausencias, coberturas, fichajes, productos…) y `generar-cuadros.js` (arranca el servidor contra una base temporal y genera los cuadros mes a mes).
+`generar-todo.js` ejecuta en orden `generar.js` (empleados, cuentas, clientes), `generar-operativa.js` (turnos, ausencias, coberturas, fichajes, productos…), `anadir-validacion.js` (validación de ubicación de los fichajes y casos de ejemplo), `generar-documentos.js` y `generar-cuadros.js` (arranca el servidor contra una base temporal y genera los cuadros mes a mes).
 
 ## Detalles de esta versión
 
